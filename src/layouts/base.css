@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "TechnaSans";
+  src: url("/fonts/TechnaSans-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  font-feature-settings: "ss01";
+}
+
+h1,
+h2,
+h3 {
+  font-family: "TechnaSans", sans-serif;
+  font-feature-settings: "ss01";
+}
+
+@layer base {
+  :root {
+    --color-primary: 198deg 93% 60%;
+    --color-background: 0deg 0% 100%;
+    --color-separator: 220deg 6% 90%;
+  }
+
+  .dark {
+    --color-primary: 125deg 93% 60%;
+    --color-background: 240deg 5% 15%;
+    --color-separator: 240deg 4% 24%;
+  }
+}
