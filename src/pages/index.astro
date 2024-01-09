@@ -3,6 +3,13 @@ import Layout from '../layouts/Layout.astro';
 import TwitterIcon from '../components/icons/TwitterIcon.astro';
 import GitHubIcon from '../components/icons/GitHubIcon.astro';
 import LinkedInIcon from '../components/icons/LinkedInIcon.astro';
+import EricssonLogo from '../components/logos/EricssonLogo.astro';
+import BrellaLogo from '../components/logos/BrellaLogo.astro';
+import GoforeLogo from '../components/logos/GoforeLogo.astro';
+import CapgeminiLogo from '../components/logos/CapgeminiLogo.astro';
+import MunchfamLogo from '../components/logos/MunchfamLogo.astro';
+import ValuenexLogo from '../components/logos/ValuenexLogo.astro';
+
 
 const socials = [
 	{
@@ -24,14 +31,6 @@ const socials = [
 ---
 
 <Layout title="Niklas Lepistö - Experimental Web Dev">
-	<nav>
-		<ul>
-			<li>Home</li>
-			<li>About</li>
-			<li>Posts</li>
-		</ul>
-	</nav>
-
 	<main class="mx-auto container grid gap-20">
 		<header class="grid grid-cols-3 gap-8">
 			<div class="col-span-1">
@@ -43,7 +42,7 @@ const socials = [
 				<h1 class="text-8xl">
 					Niklas
 					<span class="inline-block relative">
-						<span class="w-14 h-3 bg-black absolute -right-[4%] top-2 block"></span>
+						<span class="w-14 h-3 bg-black absolute -right-[3%] top-2 block"></span>
 						<span class="w-1.5 h-4 bg-white absolute left-[14.75%] bottom-4 block"></span>
 						Lepisto
 					</span>
@@ -77,27 +76,24 @@ const socials = [
 			<h2>Some brands I've worked with*</h2>
 			* as a direct employee or in a client project via an employer
 
-			<ul class="flex items-center flex-wrap gap-4">
-				<li>
-					Ericsson
+			<ul class="flex items-center flex-wrap gap-12">
+				<li class="max-w-40">
+					<EricssonLogo />
 				</li>
-				<li>
-					Brella
+				<li class="max-w-36">
+					<BrellaLogo />
 				</li>
-				<li>
-					Gofore
+				<li class="max-w-48">
+					<GoforeLogo />
 				</li>
-				<li>
-					Capgemini
+				<li class="max-w-48">
+					<CapgeminiLogo />
 				</li>
-				<li>
-					Munchfam
+				<li class="max-w-16">
+					<MunchfamLogo  />
 				</li>
-				<li>
-					Delphi
-				</li>
-				<li>
-					Valuenex
+				<li class="max-w-48">
+					<ValuenexLogo />
 				</li>
 			</ul>
 		</section>
@@ -106,7 +102,7 @@ const socials = [
 			<h2>Highlighted projects</h2>
 
 			<ul class="grid grid-cols-3 gap-4">
-				<li class="bg-neutral-50 p-4 rounded-md shadow-lg border border-white hover:shadow-xl hover:bg-white transition-all">
+				<li class=" p-4 rounded-md shadow-lg border border-separator hover:shadow-xl transition-all">
 					<h3 class="prose prose-lg">Mirror of Loss</h3>
 					<p class="prose">
 						An AI powered WebGL experience.
@@ -128,7 +124,7 @@ const socials = [
 					</ul>
 				</li>
 
-				<li class="bg-neutral-50 p-4 rounded-md shadow-lg border border-white hover:shadow-xl hover:bg-white transition-all">
+				<li class="p-4 rounded-md shadow-lg border border-separator hover:shadow-xl transition-all">
 					<h3 class="prose prose-lg">Doors of Abyss: The Endless Chase</h3>
 					<p class="prose">
 						An interactive, narrative browser game.
@@ -150,7 +146,7 @@ const socials = [
 					</ul>
 				</li>
 
-				<li class="bg-neutral-50 p-4 rounded-md shadow-lg border border-white hover:shadow-xl hover:bg-white transition-all">
+				<li class=" p-4 rounded-md shadow-lg border border-separator hover:shadow-xl transition-all">
 					<h3 class="prose prose-lg">Generation: Hotdog</h3>
 					<p class="prose">
 						A hot dog experience, powered by AI.
