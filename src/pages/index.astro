@@ -72,11 +72,11 @@ const socials = [
 
 		<section>
 			<h2>Some brands I've worked with*</h2>
-			* as a direct employee or in a client project via an employer
+			<span class="text-xs italic">* as a direct employee or in a client project via an employer</span>
 
 			<ul class="flex items-center flex-wrap gap-12">
-				<li class="max-w-40">
-					<EricssonLogo />
+				<li class="max-w-40 text-black">
+					<EricssonLogo  />
 				</li>
 				<li class="max-w-36">
 					<BrellaLogo />
@@ -99,7 +99,7 @@ const socials = [
 		<section>
 			<h2>Highlighted projects</h2>
 
-			<ul class="grid grid-cols-3 gap-4">
+			<ul class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
 				<li class="p-4 rounded-md shadow-md hover:shadow-xl transition-all">
 					<a class="inline-flex gap-2 items-center px-2 py-1 rounded-md text-xs shadow-[inset_1px_1px_8px_hsla(0,0%,100%,1),inset_-1px_-1px_8px_hsla(0,0%,85%,1)]">
 						<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
@@ -120,7 +120,7 @@ const socials = [
 
 					<ul>
 						<li>
-							<a class="inline-flex gap-2 items-center px-2 py-1 rounded-md text-xs shadow-[inset_1px_1px_8px_hsla(0,0%,100%,1),inset_-1px_-1px_8px_hsla(0,0%,85%,1)]">
+							<a class="inline-flex items-center gap-2 text-sm">
 								<svg width="18" height="18" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
 									<g fill="currentColor" stroke="currentColor">
 										<path d="M9.926,16.11c-.461,.092-.938,.14-1.426,.14-4.004,0-7.25-3.246-7.25-7.25S4.496,1.75,8.5,1.75s7.25,3.246,7.25,7.25c0,.264-.014,.524-.041,.78" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
@@ -133,7 +133,7 @@ const socials = [
 							</a>
 						</li>
 						<li>
-							<a href="https://github.com/laznic/mirror-of-loss" class="inline-flex items-center gap-2">
+							<a href="https://github.com/laznic/mirror-of-loss" class="inline-flex items-center gap-2 text-sm">
 								<GitHubIcon size={15} />
 								Source code
 							</a>
@@ -161,7 +161,7 @@ const socials = [
 
 					<ul>
 						<li>
-							<a href="https://doorsofabyss.com" class="inline-flex items-center gap-2">
+							<a href="https://doorsofabyss.com" class="inline-flex items-center gap-2 text-sm">
 								<svg width="18" height="18" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
 									<g fill="currentColor" stroke="currentColor">
 										<path d="M9.926,16.11c-.461,.092-.938,.14-1.426,.14-4.004,0-7.25-3.246-7.25-7.25S4.496,1.75,8.5,1.75s7.25,3.246,7.25,7.25c0,.264-.014,.524-.041,.78" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
@@ -174,7 +174,7 @@ const socials = [
 							</a>
 						</li>
 						<li>
-							<a href="https://github.com/laznic/doors-of-abyss" class="inline-flex items-center gap-2">
+							<a href="https://github.com/laznic/doors-of-abyss" class="inline-flex items-center gap-2 text-sm">
 								<GitHubIcon size={15} />
 								Source code
 							</a>
@@ -202,7 +202,7 @@ const socials = [
 
 					<ul>
 						<li>
-							<a href="https://generationhotdog.com" class="inline-flex items-center gap-2">
+							<a href="https://generationhotdog.com" class="inline-flex items-center gap-2 text-sm">
 								<svg width="18" height="18" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
 									<g fill="currentColor" stroke="currentColor">
 										<path d="M9.926,16.11c-.461,.092-.938,.14-1.426,.14-4.004,0-7.25-3.246-7.25-7.25S4.496,1.75,8.5,1.75s7.25,3.246,7.25,7.25c0,.264-.014,.524-.041,.78" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
@@ -215,7 +215,7 @@ const socials = [
 							</a>
 						</li>
 						<li>
-							<a href="https://github.com/laznic/generation-hotdog" class="inline-flex items-center gap-2">
+							<a href="https://github.com/laznic/generation-hotdog" class="inline-flex items-center gap-2 text-sm">
 								<GitHubIcon size={15} />
 								Source code
 							</a>
@@ -243,7 +243,7 @@ const socials = [
 
 					<ul>
 						<li>
-							<a href="https://github.com/laznic/hotdogs" class="inline-flex items-center gap-2">
+							<a href="https://github.com/laznic/hotdogs" class="inline-flex items-center gap-2 text-sm">
 								<GitHubIcon size={15} />
 								Source code
 							</a>
@@ -258,7 +258,7 @@ const socials = [
 					</p>
 					<ul>
 						<li>
-							<a href="https://maicanvas.com" class="inline-flex items-center gap-2">
+							<a href="https://maicanvas.com" class="inline-flex items-center gap-2 text-sm">
 								<svg width="18" height="18" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
 									<g fill="currentColor" stroke="currentColor">
 										<path d="M9.926,16.11c-.461,.092-.938,.14-1.426,.14-4.004,0-7.25-3.246-7.25-7.25S4.496,1.75,8.5,1.75s7.25,3.246,7.25,7.25c0,.264-.014,.524-.041,.78" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
@@ -271,7 +271,7 @@ const socials = [
 							</a>
 						</li>
 						<li>
-							<a href="https://github.com/laznic/coloring-book" class="inline-flex items-center gap-2">
+							<a href="https://github.com/laznic/coloring-book" class="inline-flex items-center gap-2 text-sm">
 								<GitHubIcon size={15} />
 								Source code
 							</a>
@@ -285,7 +285,7 @@ const socials = [
 					</p>
 					<ul>
 						<li>
-							<a href="https://quickplay.co" class="inline-flex items-center gap-2">
+							<a href="https://quickplay.co" class="inline-flex items-center gap-2 text-sm">
 								<svg width="18" height="18" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
 									<g fill="currentColor" stroke="currentColor">
 										<path d="M9.926,16.11c-.461,.092-.938,.14-1.426,.14-4.004,0-7.25-3.246-7.25-7.25S4.496,1.75,8.5,1.75s7.25,3.246,7.25,7.25c0,.264-.014,.524-.041,.78" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
@@ -304,15 +304,146 @@ const socials = [
 		
 		<section>
 			<h2>In progress</h2>
-			<ul>
-				<li>Reading: 1984</li>
-				<li>Reading: Musashi</li>
-				<li>Learning: Elixir</li>
-				<li>Learning: WebGL</li>
-				<li>Learning: Game Development</li>
-				<li>Building: Untitled game project</li>
-				<li>Building: Untitled brand project</li>
-				<li>Building: Untitled brand project</li>
+			<ul class="flex flex-wrap gap-4">
+				<li class="grid gap-1 py-2 border border-separator rounded-md">
+					<span class="inline-flex items-center gap-2 text-xs border-b border-b-separator pb-2 px-4">
+						<svg width="15" height="15" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
+							<g fill="currentColor" stroke="currentColor">
+								<path d="M9,15.051c.17,0,.339-.045,.494-.134,.643-.371,1.732-.847,3.141-.845,.899,.001,1.667,.197,2.27,.435,.648,.255,1.344-.24,1.344-.937V4.487c0-.354-.181-.68-.486-.86-.637-.376-1.726-.863-3.14-.863-1.89,0-3.198,.872-3.624,1.182" fill="none" stroke-linecap="round" stroke-linejoin="round"></path>
+								<path d="M9,15.051c-.17,0-.339-.045-.494-.134-.643-.371-1.732-.847-3.141-.845-.899,.001-1.667,.197-2.27,.435-.648,.255-1.344-.237-1.344-.933,0-2.593,0-7.472,0-9.09,0-.354,.181-.676,.486-.856,.637-.376,1.726-.863,3.14-.863,1.89,0,3.198,.872,3.624,1.182h0s0,11.104,0,11.104Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+							</g>
+						</svg>
+						Reading
+					</span>
+					<span class="px-4">
+						1984
+					</span>
+				</li>
+				<li class="grid gap-1 py-2 border border-separator rounded-md">
+					<span class="inline-flex items-center gap-2 text-xs border-b border-b-separator pb-2 px-4">
+						<svg width="15" height="15" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
+							<g fill="currentColor" stroke="currentColor">
+								<path d="M9,15.051c.17,0,.339-.045,.494-.134,.643-.371,1.732-.847,3.141-.845,.899,.001,1.667,.197,2.27,.435,.648,.255,1.344-.24,1.344-.937V4.487c0-.354-.181-.68-.486-.86-.637-.376-1.726-.863-3.14-.863-1.89,0-3.198,.872-3.624,1.182" fill="none" stroke-linecap="round" stroke-linejoin="round"></path>
+								<path d="M9,15.051c-.17,0-.339-.045-.494-.134-.643-.371-1.732-.847-3.141-.845-.899,.001-1.667,.197-2.27,.435-.648,.255-1.344-.237-1.344-.933,0-2.593,0-7.472,0-9.09,0-.354,.181-.676,.486-.856,.637-.376,1.726-.863,3.14-.863,1.89,0,3.198,.872,3.624,1.182h0s0,11.104,0,11.104Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+							</g>
+						</svg>
+						Reading
+					</span>
+					<span class="px-4">
+						Musashi
+					</span>
+				</li>
+				<li class="grid gap-1 py-2 border border-separator rounded-md">
+					<span class="inline-flex items-center gap-2 text-xs border-b border-b-separator pb-2 px-4">
+						<svg width="15" height="15" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
+							<g fill="currentColor" stroke="currentColor">
+								<line x1="9" y1=".75" x2="9" y2="1.75" fill="none" stroke-linecap="round" stroke-linejoin="round"></line>
+								<line x1="14.834" y1="3.166" x2="14.127" y2="3.873" fill="none" stroke-linecap="round" stroke-linejoin="round"></line>
+								<line x1="17.25" y1="9" x2="16.25" y2="9" fill="none" stroke-linecap="round" stroke-linejoin="round"></line>
+								<line x1="3.166" y1="3.166" x2="3.873" y2="3.873" fill="none" stroke-linecap="round" stroke-linejoin="round"></line>
+								<line x1=".75" y1="9" x2="1.75" y2="9" fill="none" stroke-linecap="round" stroke-linejoin="round"></line>
+								<path d="M13.75,9c0-2.959-2.705-5.286-5.777-4.642-1.872,.392-3.35,1.957-3.658,3.844-.381,2.339,.951,4.417,2.935,5.205v2.343c0,.552,.448,1,1,1h1.5c.552,0,1-.448,1-1v-2.343c1.755-.697,3-2.403,3-4.407Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+								<line x1="6.897" y1="13.25" x2="11.103" y2="13.25" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></line>
+							</g>
+						</svg>
+						Learning
+					</span>
+					<span class="px-4">
+						Elixir
+					</span>
+				</li>
+				<li class="grid gap-1 py-2 border border-separator rounded-md">
+					<span class="inline-flex items-center gap-2 text-xs border-b border-b-separator pb-2 px-4">
+						<svg width="15" height="15" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
+							<g fill="currentColor" stroke="currentColor">
+								<line x1="9" y1=".75" x2="9" y2="1.75" fill="none" stroke-linecap="round" stroke-linejoin="round"></line>
+								<line x1="14.834" y1="3.166" x2="14.127" y2="3.873" fill="none" stroke-linecap="round" stroke-linejoin="round"></line>
+								<line x1="17.25" y1="9" x2="16.25" y2="9" fill="none" stroke-linecap="round" stroke-linejoin="round"></line>
+								<line x1="3.166" y1="3.166" x2="3.873" y2="3.873" fill="none" stroke-linecap="round" stroke-linejoin="round"></line>
+								<line x1=".75" y1="9" x2="1.75" y2="9" fill="none" stroke-linecap="round" stroke-linejoin="round"></line>
+								<path d="M13.75,9c0-2.959-2.705-5.286-5.777-4.642-1.872,.392-3.35,1.957-3.658,3.844-.381,2.339,.951,4.417,2.935,5.205v2.343c0,.552,.448,1,1,1h1.5c.552,0,1-.448,1-1v-2.343c1.755-.697,3-2.403,3-4.407Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+								<line x1="6.897" y1="13.25" x2="11.103" y2="13.25" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></line>
+							</g>
+						</svg>
+						Learning
+					</span>
+					<span class="px-4">
+						WebGL
+					</span>
+				</li>
+				<li class="grid gap-1 py-2 border border-separator rounded-md">
+					<span class="inline-flex items-center gap-2 text-xs border-b border-b-separator pb-2 px-4">
+						<svg width="15" height="15" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
+							<g fill="currentColor" stroke="currentColor">
+								<line x1="9" y1=".75" x2="9" y2="1.75" fill="none" stroke-linecap="round" stroke-linejoin="round"></line>
+								<line x1="14.834" y1="3.166" x2="14.127" y2="3.873" fill="none" stroke-linecap="round" stroke-linejoin="round"></line>
+								<line x1="17.25" y1="9" x2="16.25" y2="9" fill="none" stroke-linecap="round" stroke-linejoin="round"></line>
+								<line x1="3.166" y1="3.166" x2="3.873" y2="3.873" fill="none" stroke-linecap="round" stroke-linejoin="round"></line>
+								<line x1=".75" y1="9" x2="1.75" y2="9" fill="none" stroke-linecap="round" stroke-linejoin="round"></line>
+								<path d="M13.75,9c0-2.959-2.705-5.286-5.777-4.642-1.872,.392-3.35,1.957-3.658,3.844-.381,2.339,.951,4.417,2.935,5.205v2.343c0,.552,.448,1,1,1h1.5c.552,0,1-.448,1-1v-2.343c1.755-.697,3-2.403,3-4.407Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+								<line x1="6.897" y1="13.25" x2="11.103" y2="13.25" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></line>
+							</g>
+						</svg>
+						Learning
+					</span>
+					<span class="px-4">
+						Game Development
+					</span>
+				</li>
+				<li class="grid gap-1 py-2 border border-separator rounded-md">
+					<span class="inline-flex items-center gap-2 text-xs border-b border-b-separator pb-2 px-4">
+						<svg width="15" height="15" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
+							<g fill="currentColor" stroke="currentColor">
+								<path d="M9.533,5.437l-3.331-3.331c-.391-.391-1.024-.391-1.414,0l-2.682,2.682c-.391,.391-.391,1.024,0,1.414l3.331,3.331" fill="none" stroke-linecap="round" stroke-linejoin="round"></path>
+								<path d="M8.467,12.563l3.331,3.331c.391,.391,1.024,.391,1.414,0l2.682-2.682c.391-.391,.391-1.024,0-1.414l-1.581-1.581" fill="none" stroke-linecap="round" stroke-linejoin="round"></path>
+								<line x1="3.416" y1="7.513" x2="5.184" y2="5.745" fill="none" stroke-linecap="round" stroke-linejoin="round"></line>
+								<line x1="10.487" y1="14.584" x2="12.255" y2="12.816" fill="none" stroke-linecap="round" stroke-linejoin="round"></line>
+								<path d="M2.25,15.75s3.599-.568,4.546-1.515c.947-.947,8.577-8.577,8.577-8.577,.837-.837,.837-2.194,0-3.03-.837-.837-2.194-.837-3.03,0,0,0-7.63,7.63-8.577,8.577s-1.515,4.546-1.515,4.546h0Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+								<line x1="11.121" y1="3.848" x2="14.152" y2="6.879" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></line>
+							</g>
+						</svg>
+						Building
+					</span>
+					<span class="px-4">
+						Untitled game project
+					</span>
+				</li>
+				<li class="grid gap-1 py-2 border border-separator rounded-md">
+					<span class="inline-flex items-center gap-2 text-xs border-b border-b-separator pb-2 px-4">
+						<svg width="15" height="15" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
+							<g fill="currentColor" stroke="currentColor">
+								<path d="M9.533,5.437l-3.331-3.331c-.391-.391-1.024-.391-1.414,0l-2.682,2.682c-.391,.391-.391,1.024,0,1.414l3.331,3.331" fill="none" stroke-linecap="round" stroke-linejoin="round"></path>
+								<path d="M8.467,12.563l3.331,3.331c.391,.391,1.024,.391,1.414,0l2.682-2.682c.391-.391,.391-1.024,0-1.414l-1.581-1.581" fill="none" stroke-linecap="round" stroke-linejoin="round"></path>
+								<line x1="3.416" y1="7.513" x2="5.184" y2="5.745" fill="none" stroke-linecap="round" stroke-linejoin="round"></line>
+								<line x1="10.487" y1="14.584" x2="12.255" y2="12.816" fill="none" stroke-linecap="round" stroke-linejoin="round"></line>
+								<path d="M2.25,15.75s3.599-.568,4.546-1.515c.947-.947,8.577-8.577,8.577-8.577,.837-.837,.837-2.194,0-3.03-.837-.837-2.194-.837-3.03,0,0,0-7.63,7.63-8.577,8.577s-1.515,4.546-1.515,4.546h0Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+								<line x1="11.121" y1="3.848" x2="14.152" y2="6.879" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></line>
+							</g>
+						</svg>
+						Building
+					</span>
+					<span class="px-4">
+						Untitled brand project
+					</span>
+				</li>
+				<li class="grid gap-1 py-2 border border-separator rounded-md">
+					<span class="inline-flex items-center gap-2 text-xs border-b border-b-separator pb-2 px-4">
+						<svg width="15" height="15" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
+							<g fill="currentColor" stroke="currentColor">
+								<path d="M9.533,5.437l-3.331-3.331c-.391-.391-1.024-.391-1.414,0l-2.682,2.682c-.391,.391-.391,1.024,0,1.414l3.331,3.331" fill="none" stroke-linecap="round" stroke-linejoin="round"></path>
+								<path d="M8.467,12.563l3.331,3.331c.391,.391,1.024,.391,1.414,0l2.682-2.682c.391-.391,.391-1.024,0-1.414l-1.581-1.581" fill="none" stroke-linecap="round" stroke-linejoin="round"></path>
+								<line x1="3.416" y1="7.513" x2="5.184" y2="5.745" fill="none" stroke-linecap="round" stroke-linejoin="round"></line>
+								<line x1="10.487" y1="14.584" x2="12.255" y2="12.816" fill="none" stroke-linecap="round" stroke-linejoin="round"></line>
+								<path d="M2.25,15.75s3.599-.568,4.546-1.515c.947-.947,8.577-8.577,8.577-8.577,.837-.837,.837-2.194,0-3.03-.837-.837-2.194-.837-3.03,0,0,0-7.63,7.63-8.577,8.577s-1.515,4.546-1.515,4.546h0Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+								<line x1="11.121" y1="3.848" x2="14.152" y2="6.879" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></line>
+							</g>
+						</svg>
+						Building
+					</span>
+					<span class="px-4">
+						Untitled brand project
+					</span>
+				</li>
 			</ul>
 		</section>
 
