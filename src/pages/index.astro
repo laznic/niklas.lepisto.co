@@ -31,19 +31,19 @@ const socials = [
 ---
 
 <Layout title="Niklas Lepistö - Experimental Web Dev">
-	<main class="grid gap-20">
-		<header class="grid grid-cols-3 gap-8">
-			<div class="col-span-1">
-				<!-- <img src="/images/headshot-2.webp" alt="Niklas Lepistö"> -->
+	<main class="grid">
+		<header class="grid grid-cols-5 gap-24 p-8 py-24 container mx-auto">
+			<div class="col-span-2 brightness-105 rounded-lg overflow-hidden shadow drop-shadow-2xl ring-2 ring-neutral-300 border border-background">
+				<img class="w-full object-cover h-full" src="/images/headshot-2.webp" alt="Niklas Lepistö">
 			</div>
 
-			<section class="col-span-2 items-center grid">
+			<section class="col-span-3 items-center grid">
 				<div class="grid gap-4">
-				<h1 class="text-8xl">
+				<h1 class="text-4xl">
 					Niklas
-					<span class="inline-block relative">
-						<span class="w-14 h-3 bg-black absolute -right-[3%] top-2 block"></span>
-						<span class="w-1.5 h-4 bg-white absolute left-[14.75%] bottom-4 block"></span>
+					<span class="inline-block relative group">
+						<span class="w-14 h-3.5 bg-black absolute -right-[2%] top-[22%] block"></span>
+						<span class="w-1.5 h-4 bg-background absolute left-[14.75%] bottom-[30%] block"></span>
 						Lepisto
 					</span>
 				</h1>
@@ -70,41 +70,43 @@ const socials = [
 			</section>
 		</header>
 
-		<section>
-			<h2>Some brands I've worked with*</h2>
-			<span class="text-xs italic">* as a direct employee or in a client project via an employer</span>
+		<section class="w-full bg-gradient-to-b to-[#f3f3f3] from-background">
+			<div class="container mx-auto p-8 pb-16 mb-24">
+				<h2>Some brands I've worked with:</h2>
+				<span class="text-xs italic">as a direct employee or in a client project via an employer</span>
 
-			<ul class="flex items-center flex-wrap gap-12">
-				<li class="max-w-40 text-black">
-					<EricssonLogo  />
-				</li>
-				<li class="max-w-36 relative">
-					<span role="tooltip" class="px-2 py-1 text-center bg-neutral-800 text-neutral-50 rounded ring-2 ring-neutral-200 border border-neutral-600 text-xs absolute block w-fit whitespace-nowrap drop-shadow-xl shadow-lg -bottom-12 left-0 right-0 mx-auto">
-						<span class="block absolute border-r-8 border-r-transparent border-l-8 border-l-transparent border-b-8 border-b-neutral-800 w-0 h-0 -top-2 left-0 right-0 mx-auto" />
-						I work here!
-					</span>
-					<BrellaLogo />
-				</li>
-				<li class="max-w-48">
-					<GoforeLogo />
-				</li>
-				<li class="max-w-48">
-					<CapgeminiLogo />
-				</li>
-				<li class="max-w-16">
-					<MunchfamLogo  />
-				</li>
-				<li class="max-w-48">
-					<ValuenexLogo />
-				</li>
-			</ul>
+				<ul class="flex items-center flex-wrap gap-12 justify-between mt-8">
+					<li class="max-w-40 text-black">
+						<EricssonLogo  />
+					</li>
+					<li class="max-w-36 relative">
+						<span role="tooltip" class="px-4 py-2 text-center bg-neutral-700 text-neutral-50 rounded ring-2 ring-neutral-200 border border-neutral-200 text-xs absolute block w-fit whitespace-nowrap drop-shadow-xl shadow-lg -bottom-16 left-0 right-0 mx-auto">
+							<span class="block absolute border-r-8 border-r-transparent border-l-8 border-l-transparent border-b-8 border-b-neutral-700 w-0 h-0 -top-2 left-0 right-0 mx-auto" />
+							I work here!
+						</span>
+						<BrellaLogo />
+					</li>
+					<li class="max-w-48">
+						<GoforeLogo />
+					</li>
+					<li class="max-w-48">
+						<CapgeminiLogo />
+					</li>
+					<li class="max-w-16">
+						<MunchfamLogo  />
+					</li>
+					<li class="max-w-48">
+						<ValuenexLogo />
+					</li>
+				</ul>
+			</div>
 		</section>
 
-		<section class="bg-gradient-to-b from-slate-200 to-slate-100 p-8 shadow-inner border-t border-t-slate-300 border-b border-b-white">
-			<!-- <h2 class="text-slate-500 text-md">Highlighted projects</h2> -->
+		<section class="overflow-hidden bg-gradient-to-b relative from-[#f3f3f3] to-background py-14 pb-24">
+			<h2 class="text-neutral-200 text-3xl z-10 relative mx-auto container px-8">Projects</h2>
 
-			<ul class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10">
-				<li class="p-4 rounded-md bg-gradient-to-b from-slate-200 to-slate-50  drop-shadow-2xl shadow-md border-b-4 border border-background border-b-slate-300 hover:shadow-xl transition-all hover:-translate-y-1 brightness-100 hover:brightness-105">
+			<ul class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10 mx-auto max-w-[1600px] px-8">
+				<li class="p-4 rounded-md bg-gradient-to-b from-[#f3f3f3] to-[#fffffc]  drop-shadow-2xl shadow-md border-b-4 border border-background border-b-stone-300 hover:shadow-xl transition-all hover:-translate-y-1 brightness-100 hover:brightness-105">
 					<a class="flex items-center justify-between gap-4 text-sm">
 						Supabase Hackathon: Most visually pleasing
 
@@ -127,7 +129,7 @@ const socials = [
 
 					<ul class="border-t border-white pt-3">
 						<li>
-							<a class="inline-flex items-center gap-2 text-sm">
+							<a href="https://mirrorofloss.com" class="inline-flex items-center gap-2 text-sm hover:underline">
 								<svg width="15" height="15" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
 									<g fill="currentColor" stroke="currentColor">
 										<path d="M9.926,16.11c-.461,.092-.938,.14-1.426,.14-4.004,0-7.25-3.246-7.25-7.25S4.496,1.75,8.5,1.75s7.25,3.246,7.25,7.25c0,.264-.014,.524-.041,.78" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
@@ -140,7 +142,7 @@ const socials = [
 							</a>
 						</li>
 						<li>
-							<a href="https://github.com/laznic/mirror-of-loss" class="inline-flex items-center gap-2 text-sm">
+							<a href="https://github.com/laznic/mirror-of-loss" class="inline-flex items-center gap-2 text-sm hover:underline">
 								<GitHubIcon size={15} />
 								Source code
 							</a>
@@ -148,7 +150,7 @@ const socials = [
 					</ul>
 				</li>
 
-				<li class="p-4 rounded-md bg-gradient-to-b from-slate-200 to-slate-50  drop-shadow-2xl shadow-md border-b-4 border border-background border-b-slate-300 hover:shadow-xl transition-all hover:-translate-y-1 brightness-100 hover:brightness-105">
+				<li class="p-4 rounded-md bg-gradient-to-b from-[#f3f3f3] to-[#fffffc]  drop-shadow-2xl shadow-md border-b-4 border border-background border-b-stone-300 hover:shadow-xl transition-all hover:-translate-y-1 brightness-100 hover:brightness-105">
 					<a class="flex items-center justify-between gap-4 text-sm">
 						Supabase Hackathon: Most visually pleasing
 
@@ -171,7 +173,7 @@ const socials = [
 
 					<ul class="border-t border-white pt-3">
 						<li>
-							<a href="https://doorsofabyss.com" class="inline-flex items-center gap-2 text-sm">
+							<a href="https://doorsofabyss.com" class="inline-flex items-center gap-2 text-sm hover:underline">
 								<svg width="15" height="15" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
 									<g fill="currentColor" stroke="currentColor">
 										<path d="M9.926,16.11c-.461,.092-.938,.14-1.426,.14-4.004,0-7.25-3.246-7.25-7.25S4.496,1.75,8.5,1.75s7.25,3.246,7.25,7.25c0,.264-.014,.524-.041,.78" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
@@ -184,7 +186,7 @@ const socials = [
 							</a>
 						</li>
 						<li>
-							<a href="https://github.com/laznic/doors-of-abyss" class="inline-flex items-center gap-2 text-sm">
+							<a href="https://github.com/laznic/doors-of-abyss" class="inline-flex items-center gap-2 text-sm hover:underline">
 								<GitHubIcon size={15} />
 								Source code
 							</a>
@@ -192,7 +194,7 @@ const socials = [
 					</ul>
 				</li>
 
-				<li class="p-4 rounded-md bg-gradient-to-b from-slate-200 to-slate-50  drop-shadow-2xl shadow-md border-b-4 border border-background border-b-slate-300 hover:shadow-xl transition-all hover:-translate-y-1 brightness-100 hover:brightness-105">
+				<li class="p-4 rounded-md bg-gradient-to-b from-[#f3f3f3] to-[#fffffc]  drop-shadow-2xl shadow-md border-b-4 border border-background border-b-stone-300 hover:shadow-xl transition-all hover:-translate-y-1 brightness-100 hover:brightness-105">
 					<a class="flex items-center justify-between gap-4 text-sm">
 						Supabase Hackathon: Most visually pleasing
 
@@ -215,7 +217,7 @@ const socials = [
 
 					<ul class="border-t border-white pt-3">
 						<li>
-							<a href="https://generationhotdog.com" class="inline-flex items-center gap-2 text-sm">
+							<a href="https://generationhotdog.com" class="inline-flex items-center gap-2 text-sm hover:underline">
 								<svg width="15" height="15" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
 									<g fill="currentColor" stroke="currentColor">
 										<path d="M9.926,16.11c-.461,.092-.938,.14-1.426,.14-4.004,0-7.25-3.246-7.25-7.25S4.496,1.75,8.5,1.75s7.25,3.246,7.25,7.25c0,.264-.014,.524-.041,.78" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
@@ -228,7 +230,7 @@ const socials = [
 							</a>
 						</li>
 						<li>
-							<a href="https://github.com/laznic/generation-hotdog" class="inline-flex items-center gap-2 text-sm">
+							<a href="https://github.com/laznic/generation-hotdog" class="inline-flex items-center gap-2 text-sm hover:underline">
 								<GitHubIcon size={15} />
 								Source code
 							</a>
@@ -236,7 +238,7 @@ const socials = [
 					</ul>
 				</li>
 
-				<li class="p-4 rounded-md bg-gradient-to-b from-slate-200 to-slate-50  drop-shadow-2xl shadow-md border-b-4 border border-background border-b-slate-300 hover:shadow-xl transition-all hover:-translate-y-1 brightness-100 hover:brightness-105">
+				<li class="p-4 rounded-md bg-gradient-to-b from-[#f3f3f3] to-[#fffffc]  drop-shadow-2xl shadow-md border-b-4 border border-background border-b-stone-300 hover:shadow-xl transition-all hover:-translate-y-1 brightness-100 hover:brightness-105">
 					<a class="flex items-center justify-between gap-4 text-sm">
 						Supabase Hackathon: Most fun/interesting
 
@@ -252,14 +254,14 @@ const socials = [
 
 					<h3 class="prose text-md">That Hot Dog Game</h3>
 					<p class="prose border-b border-slate-200 pb-2">
-						A hot dog eating game.
+						A hot dog eating game using webcams.
 
 						<span class="block text-xs mt-2">Built with: React, Supabase</span>
 					</p>
 
 					<ul class="border-t border-white pt-3">
 						<li>
-							<a href="https://github.com/laznic/hotdogs" class="inline-flex items-center gap-2 text-sm">
+							<a href="https://github.com/laznic/hotdogs" class="inline-flex items-center gap-2 text-sm hover:underline">
 								<GitHubIcon size={15} />
 								Source code
 							</a>
@@ -267,7 +269,7 @@ const socials = [
 					</ul>
 				</li>
 
-				<li class="p-4 rounded-md bg-gradient-to-b from-slate-200 to-slate-50  drop-shadow-2xl shadow-md border-b-4 border border-background border-b-slate-300 hover:shadow-xl transition-all hover:-translate-y-1 brightness-100 hover:brightness-105">
+				<li class="p-4 rounded-md bg-gradient-to-b from-[#f3f3f3] to-[#fffffc]  drop-shadow-2xl shadow-md border-b-4 border border-background border-b-stone-300 hover:shadow-xl transition-all hover:-translate-y-1 brightness-100 hover:brightness-105">
 					<h3 class="prose text-md">AI Coloring book</h3>
 					<p class="prose border-b border-slate-200 pb-2">
 						A digital "coloring book" app powered by an AI.
@@ -277,7 +279,7 @@ const socials = [
 
 					<ul class="border-t border-white pt-3">
 						<li>
-							<a href="https://maicanvas.com" class="inline-flex items-center gap-2 text-sm">
+							<a href="https://maicanvas.com" class="inline-flex items-center gap-2 text-sm hover:underline">
 								<svg width="15" height="15" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
 									<g fill="currentColor" stroke="currentColor">
 										<path d="M9.926,16.11c-.461,.092-.938,.14-1.426,.14-4.004,0-7.25-3.246-7.25-7.25S4.496,1.75,8.5,1.75s7.25,3.246,7.25,7.25c0,.264-.014,.524-.041,.78" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
@@ -290,7 +292,7 @@ const socials = [
 							</a>
 						</li>
 						<li>
-							<a href="https://github.com/laznic/coloring-book" class="inline-flex items-center gap-2 text-sm">
+							<a href="https://github.com/laznic/coloring-book" class="inline-flex items-center gap-2 text-sm hover:underline">
 								<GitHubIcon size={15} />
 								Source code
 							</a>
@@ -298,7 +300,7 @@ const socials = [
 					</ul>
 				</li>
 
-				<li class="p-4 rounded-md bg-gradient-to-b from-slate-200 to-slate-50  drop-shadow-2xl shadow-md border-b-4 border border-background border-b-slate-300 hover:shadow-xl transition-all hover:-translate-y-1 brightness-100 hover:brightness-105">
+			<li class="p-4 rounded-md bg-gradient-to-b from-[#f3f3f3] to-[#fffffc]  drop-shadow-2xl shadow-md border-b-4 border border-background border-b-stone-300 hover:shadow-xl transition-all hover:-translate-y-1 brightness-100 hover:brightness-105">
 					<h3 class="prose text-md">Quickplay</h3>
 					<p class="prose border-b border-slate-200 pb-2">
 						An automated tournament platform that runs on Discord.
@@ -308,7 +310,7 @@ const socials = [
 
 					<ul class="border-t border-white pt-3">
 						<li>
-							<a href="https://quickplay.co" class="inline-flex items-center gap-2 text-sm">
+							<a href="https://quickplay.co" class="inline-flex items-center gap-2 text-sm hover:underline">
 								<svg width="15" height="15" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
 									<g fill="currentColor" stroke="currentColor">
 										<path d="M9.926,16.11c-.461,.092-.938,.14-1.426,.14-4.004,0-7.25-3.246-7.25-7.25S4.496,1.75,8.5,1.75s7.25,3.246,7.25,7.25c0,.264-.014,.524-.041,.78" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
@@ -325,154 +327,216 @@ const socials = [
 			</ul>
 		</section>
 		
-		<section>
-			<h2>In progress</h2>
-			<ul class="flex flex-wrap gap-4">
-				<li class="grid gap-1 py-2 border border-separator rounded-md">
-					<span class="inline-flex items-center gap-2 text-xs border-b border-b-separator pb-2 px-4">
-						<svg width="15" height="15" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
-							<g fill="currentColor" stroke="currentColor">
-								<path d="M9,15.051c.17,0,.339-.045,.494-.134,.643-.371,1.732-.847,3.141-.845,.899,.001,1.667,.197,2.27,.435,.648,.255,1.344-.24,1.344-.937V4.487c0-.354-.181-.68-.486-.86-.637-.376-1.726-.863-3.14-.863-1.89,0-3.198,.872-3.624,1.182" fill="none" stroke-linecap="round" stroke-linejoin="round"></path>
-								<path d="M9,15.051c-.17,0-.339-.045-.494-.134-.643-.371-1.732-.847-3.141-.845-.899,.001-1.667,.197-2.27,.435-.648,.255-1.344-.237-1.344-.933,0-2.593,0-7.472,0-9.09,0-.354,.181-.676,.486-.856,.637-.376,1.726-.863,3.14-.863,1.89,0,3.198,.872,3.624,1.182h0s0,11.104,0,11.104Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
-							</g>
-						</svg>
-						Reading
-					</span>
-					<span class="px-4">
-						1984
-					</span>
-				</li>
-				<li class="grid gap-1 py-2 border border-separator rounded-md">
-					<span class="inline-flex items-center gap-2 text-xs border-b border-b-separator pb-2 px-4">
-						<svg width="15" height="15" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
-							<g fill="currentColor" stroke="currentColor">
-								<path d="M9,15.051c.17,0,.339-.045,.494-.134,.643-.371,1.732-.847,3.141-.845,.899,.001,1.667,.197,2.27,.435,.648,.255,1.344-.24,1.344-.937V4.487c0-.354-.181-.68-.486-.86-.637-.376-1.726-.863-3.14-.863-1.89,0-3.198,.872-3.624,1.182" fill="none" stroke-linecap="round" stroke-linejoin="round"></path>
-								<path d="M9,15.051c-.17,0-.339-.045-.494-.134-.643-.371-1.732-.847-3.141-.845-.899,.001-1.667,.197-2.27,.435-.648,.255-1.344-.237-1.344-.933,0-2.593,0-7.472,0-9.09,0-.354,.181-.676,.486-.856,.637-.376,1.726-.863,3.14-.863,1.89,0,3.198,.872,3.624,1.182h0s0,11.104,0,11.104Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
-							</g>
-						</svg>
-						Reading
-					</span>
-					<span class="px-4">
-						Musashi
-					</span>
-				</li>
-				<li class="grid gap-1 py-2 border border-separator rounded-md">
-					<span class="inline-flex items-center gap-2 text-xs border-b border-b-separator pb-2 px-4">
-						<svg width="15" height="15" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
-							<g fill="currentColor" stroke="currentColor">
-								<line x1="9" y1=".75" x2="9" y2="1.75" fill="none" stroke-linecap="round" stroke-linejoin="round"></line>
-								<line x1="14.834" y1="3.166" x2="14.127" y2="3.873" fill="none" stroke-linecap="round" stroke-linejoin="round"></line>
-								<line x1="17.25" y1="9" x2="16.25" y2="9" fill="none" stroke-linecap="round" stroke-linejoin="round"></line>
-								<line x1="3.166" y1="3.166" x2="3.873" y2="3.873" fill="none" stroke-linecap="round" stroke-linejoin="round"></line>
-								<line x1=".75" y1="9" x2="1.75" y2="9" fill="none" stroke-linecap="round" stroke-linejoin="round"></line>
-								<path d="M13.75,9c0-2.959-2.705-5.286-5.777-4.642-1.872,.392-3.35,1.957-3.658,3.844-.381,2.339,.951,4.417,2.935,5.205v2.343c0,.552,.448,1,1,1h1.5c.552,0,1-.448,1-1v-2.343c1.755-.697,3-2.403,3-4.407Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
-								<line x1="6.897" y1="13.25" x2="11.103" y2="13.25" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></line>
-							</g>
-						</svg>
-						Learning
-					</span>
-					<span class="px-4">
-						Elixir
-					</span>
-				</li>
-				<li class="grid gap-1 py-2 border border-separator rounded-md">
-					<span class="inline-flex items-center gap-2 text-xs border-b border-b-separator pb-2 px-4">
-						<svg width="15" height="15" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
-							<g fill="currentColor" stroke="currentColor">
-								<line x1="9" y1=".75" x2="9" y2="1.75" fill="none" stroke-linecap="round" stroke-linejoin="round"></line>
-								<line x1="14.834" y1="3.166" x2="14.127" y2="3.873" fill="none" stroke-linecap="round" stroke-linejoin="round"></line>
-								<line x1="17.25" y1="9" x2="16.25" y2="9" fill="none" stroke-linecap="round" stroke-linejoin="round"></line>
-								<line x1="3.166" y1="3.166" x2="3.873" y2="3.873" fill="none" stroke-linecap="round" stroke-linejoin="round"></line>
-								<line x1=".75" y1="9" x2="1.75" y2="9" fill="none" stroke-linecap="round" stroke-linejoin="round"></line>
-								<path d="M13.75,9c0-2.959-2.705-5.286-5.777-4.642-1.872,.392-3.35,1.957-3.658,3.844-.381,2.339,.951,4.417,2.935,5.205v2.343c0,.552,.448,1,1,1h1.5c.552,0,1-.448,1-1v-2.343c1.755-.697,3-2.403,3-4.407Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
-								<line x1="6.897" y1="13.25" x2="11.103" y2="13.25" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></line>
-							</g>
-						</svg>
-						Learning
-					</span>
-					<span class="px-4">
-						WebGL
-					</span>
-				</li>
-				<li class="grid gap-1 py-2 border border-separator rounded-md">
-					<span class="inline-flex items-center gap-2 text-xs border-b border-b-separator pb-2 px-4">
-						<svg width="15" height="15" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
-							<g fill="currentColor" stroke="currentColor">
-								<line x1="9" y1=".75" x2="9" y2="1.75" fill="none" stroke-linecap="round" stroke-linejoin="round"></line>
-								<line x1="14.834" y1="3.166" x2="14.127" y2="3.873" fill="none" stroke-linecap="round" stroke-linejoin="round"></line>
-								<line x1="17.25" y1="9" x2="16.25" y2="9" fill="none" stroke-linecap="round" stroke-linejoin="round"></line>
-								<line x1="3.166" y1="3.166" x2="3.873" y2="3.873" fill="none" stroke-linecap="round" stroke-linejoin="round"></line>
-								<line x1=".75" y1="9" x2="1.75" y2="9" fill="none" stroke-linecap="round" stroke-linejoin="round"></line>
-								<path d="M13.75,9c0-2.959-2.705-5.286-5.777-4.642-1.872,.392-3.35,1.957-3.658,3.844-.381,2.339,.951,4.417,2.935,5.205v2.343c0,.552,.448,1,1,1h1.5c.552,0,1-.448,1-1v-2.343c1.755-.697,3-2.403,3-4.407Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
-								<line x1="6.897" y1="13.25" x2="11.103" y2="13.25" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></line>
-							</g>
-						</svg>
-						Learning
-					</span>
-					<span class="px-4">
-						Game Development
-					</span>
-				</li>
-				<li class="grid gap-1 py-2 border border-separator rounded-md">
-					<span class="inline-flex items-center gap-2 text-xs border-b border-b-separator pb-2 px-4">
-						<svg width="15" height="15" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
-							<g fill="currentColor" stroke="currentColor">
-								<path d="M9.533,5.437l-3.331-3.331c-.391-.391-1.024-.391-1.414,0l-2.682,2.682c-.391,.391-.391,1.024,0,1.414l3.331,3.331" fill="none" stroke-linecap="round" stroke-linejoin="round"></path>
-								<path d="M8.467,12.563l3.331,3.331c.391,.391,1.024,.391,1.414,0l2.682-2.682c.391-.391,.391-1.024,0-1.414l-1.581-1.581" fill="none" stroke-linecap="round" stroke-linejoin="round"></path>
-								<line x1="3.416" y1="7.513" x2="5.184" y2="5.745" fill="none" stroke-linecap="round" stroke-linejoin="round"></line>
-								<line x1="10.487" y1="14.584" x2="12.255" y2="12.816" fill="none" stroke-linecap="round" stroke-linejoin="round"></line>
-								<path d="M2.25,15.75s3.599-.568,4.546-1.515c.947-.947,8.577-8.577,8.577-8.577,.837-.837,.837-2.194,0-3.03-.837-.837-2.194-.837-3.03,0,0,0-7.63,7.63-8.577,8.577s-1.515,4.546-1.515,4.546h0Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
-								<line x1="11.121" y1="3.848" x2="14.152" y2="6.879" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></line>
-							</g>
-						</svg>
-						Building
-					</span>
-					<span class="px-4">
-						Untitled game project
-					</span>
-				</li>
-				<li class="grid gap-1 py-2 border border-separator rounded-md">
-					<span class="inline-flex items-center gap-2 text-xs border-b border-b-separator pb-2 px-4">
-						<svg width="15" height="15" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
-							<g fill="currentColor" stroke="currentColor">
-								<path d="M9.533,5.437l-3.331-3.331c-.391-.391-1.024-.391-1.414,0l-2.682,2.682c-.391,.391-.391,1.024,0,1.414l3.331,3.331" fill="none" stroke-linecap="round" stroke-linejoin="round"></path>
-								<path d="M8.467,12.563l3.331,3.331c.391,.391,1.024,.391,1.414,0l2.682-2.682c.391-.391,.391-1.024,0-1.414l-1.581-1.581" fill="none" stroke-linecap="round" stroke-linejoin="round"></path>
-								<line x1="3.416" y1="7.513" x2="5.184" y2="5.745" fill="none" stroke-linecap="round" stroke-linejoin="round"></line>
-								<line x1="10.487" y1="14.584" x2="12.255" y2="12.816" fill="none" stroke-linecap="round" stroke-linejoin="round"></line>
-								<path d="M2.25,15.75s3.599-.568,4.546-1.515c.947-.947,8.577-8.577,8.577-8.577,.837-.837,.837-2.194,0-3.03-.837-.837-2.194-.837-3.03,0,0,0-7.63,7.63-8.577,8.577s-1.515,4.546-1.515,4.546h0Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
-								<line x1="11.121" y1="3.848" x2="14.152" y2="6.879" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></line>
-							</g>
-						</svg>
-						Building
-					</span>
-					<span class="px-4">
-						Untitled brand project
-					</span>
-				</li>
-				<li class="grid gap-1 py-2 border border-separator rounded-md">
-					<span class="inline-flex items-center gap-2 text-xs border-b border-b-separator pb-2 px-4">
-						<svg width="15" height="15" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
-							<g fill="currentColor" stroke="currentColor">
-								<path d="M9.533,5.437l-3.331-3.331c-.391-.391-1.024-.391-1.414,0l-2.682,2.682c-.391,.391-.391,1.024,0,1.414l3.331,3.331" fill="none" stroke-linecap="round" stroke-linejoin="round"></path>
-								<path d="M8.467,12.563l3.331,3.331c.391,.391,1.024,.391,1.414,0l2.682-2.682c.391-.391,.391-1.024,0-1.414l-1.581-1.581" fill="none" stroke-linecap="round" stroke-linejoin="round"></path>
-								<line x1="3.416" y1="7.513" x2="5.184" y2="5.745" fill="none" stroke-linecap="round" stroke-linejoin="round"></line>
-								<line x1="10.487" y1="14.584" x2="12.255" y2="12.816" fill="none" stroke-linecap="round" stroke-linejoin="round"></line>
-								<path d="M2.25,15.75s3.599-.568,4.546-1.515c.947-.947,8.577-8.577,8.577-8.577,.837-.837,.837-2.194,0-3.03-.837-.837-2.194-.837-3.03,0,0,0-7.63,7.63-8.577,8.577s-1.515,4.546-1.515,4.546h0Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
-								<line x1="11.121" y1="3.848" x2="14.152" y2="6.879" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></line>
-							</g>
-						</svg>
-						Building
-					</span>
-					<span class="px-4">
-						Untitled brand project
-					</span>
-				</li>
-			</ul>
+		<section class="pt-12 pb-36 overflow-hidden">
+			<h2 class="text-neutral-200 text-3xl mb-8 mx-auto container px-8">
+				Few things in progress
+			</h2>
+
+			<section class="relative">
+				<ul class="flex gap-8 z-10 overflow-x-auto px-8 scroll-smooth snap-x justify-between">
+					<li class="grid border border-separator rounded-md overflow-hidden shadow-md  ring-1 ring-neutral-100 flex-shrink-0">
+						<span class="relative bg-[#f3f3f3] inline-flex items-center gap-2 text-xs border-b border-b-separator pt-4 pb-3 pl-4 pr-5">
+							<svg width="15" height="15" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
+								<g fill="currentColor" stroke="currentColor">
+									<path d="M9,15.051c.17,0,.339-.045,.494-.134,.643-.371,1.732-.847,3.141-.845,.899,.001,1.667,.197,2.27,.435,.648,.255,1.344-.24,1.344-.937V4.487c0-.354-.181-.68-.486-.86-.637-.376-1.726-.863-3.14-.863-1.89,0-3.198,.872-3.624,1.182" fill="none" stroke-linecap="round" stroke-linejoin="round"></path>
+									<path d="M9,15.051c-.17,0-.339-.045-.494-.134-.643-.371-1.732-.847-3.141-.845-.899,.001-1.667,.197-2.27,.435-.648,.255-1.344-.237-1.344-.933,0-2.593,0-7.472,0-9.09,0-.354,.181-.676,.486-.856,.637-.376,1.726-.863,3.14-.863,1.89,0,3.198,.872,3.624,1.182h0s0,11.104,0,11.104Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+								</g>
+							</svg>
+							Reading
+							
+							<div class="absolute w-full top-0 left-0 right-0">
+								<div class="absolute top-1.5 left-1 w-1 h-1 ring-1 ring-neutral-300 border border-neutral-100 drop-shadow bg-background rounded-full" />
+								<div class="absolute top-1.5 right-1 w-1 h-1 ring-1 ring-neutral-300 border border-neutral-100 drop-shadow bg-background rounded-full" />
+								<div class="h-[1px] bg-neutral-400 absolute top-1.5 left-1 right-1 brightness-125" />
+							</div>
+						</span>
+						<span class="py-4 px-4 bg-[#fffffc]">
+							1984
+						</span>
+					</li>
+
+					<li class="grid border border-separator rounded-md overflow-hidden shadow-md ring-1 ring-neutral-100 flex-shrink-0">
+						<span class="relative bg-[#f3f3f3] inline-flex items-center gap-2 text-xs border-b border-b-separator pt-4 pb-3 pl-4 pr-5">
+							<svg width="15" height="15" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
+								<g fill="currentColor" stroke="currentColor">
+									<path d="M9,15.051c.17,0,.339-.045,.494-.134,.643-.371,1.732-.847,3.141-.845,.899,.001,1.667,.197,2.27,.435,.648,.255,1.344-.24,1.344-.937V4.487c0-.354-.181-.68-.486-.86-.637-.376-1.726-.863-3.14-.863-1.89,0-3.198,.872-3.624,1.182" fill="none" stroke-linecap="round" stroke-linejoin="round"></path>
+									<path d="M9,15.051c-.17,0-.339-.045-.494-.134-.643-.371-1.732-.847-3.141-.845-.899,.001-1.667,.197-2.27,.435-.648,.255-1.344-.237-1.344-.933,0-2.593,0-7.472,0-9.09,0-.354,.181-.676,.486-.856,.637-.376,1.726-.863,3.14-.863,1.89,0,3.198,.872,3.624,1.182h0s0,11.104,0,11.104Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+								</g>
+							</svg>
+							Reading
+
+							<div class="absolute w-full top-0 left-0 right-0">
+								<div class="absolute top-1.5 left-1 w-1 h-1 ring-1 ring-neutral-300 border border-neutral-100 drop-shadow bg-background rounded-full" />
+								<div class="absolute top-1.5 right-1 w-1 h-1 ring-1 ring-neutral-300 border border-neutral-100 drop-shadow bg-background rounded-full" />
+								<div class="h-[1px] bg-neutral-400 absolute top-1.5 left-1 right-1 brightness-125" />
+							</div>
+						</span>
+						<span class="py-4 px-4 bg-[#fffffc]">
+							Musashi
+						</span>
+					</li>
+
+					<li class="grid border border-separator rounded-md overflow-hidden shadow-md ring-1 ring-neutral-100 flex-shrink-0">
+						<span class="relative bg-[#f3f3f3] inline-flex items-center gap-2 text-xs border-b border-b-separator pt-4 pb-3 pl-4 pr-5">
+							<svg width="15" height="15" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
+								<g fill="currentColor" stroke="currentColor">
+									<line x1="9" y1=".75" x2="9" y2="1.75" fill="none" stroke-linecap="round" stroke-linejoin="round"></line>
+									<line x1="14.834" y1="3.166" x2="14.127" y2="3.873" fill="none" stroke-linecap="round" stroke-linejoin="round"></line>
+									<line x1="17.25" y1="9" x2="16.25" y2="9" fill="none" stroke-linecap="round" stroke-linejoin="round"></line>
+									<line x1="3.166" y1="3.166" x2="3.873" y2="3.873" fill="none" stroke-linecap="round" stroke-linejoin="round"></line>
+									<line x1=".75" y1="9" x2="1.75" y2="9" fill="none" stroke-linecap="round" stroke-linejoin="round"></line>
+									<path d="M13.75,9c0-2.959-2.705-5.286-5.777-4.642-1.872,.392-3.35,1.957-3.658,3.844-.381,2.339,.951,4.417,2.935,5.205v2.343c0,.552,.448,1,1,1h1.5c.552,0,1-.448,1-1v-2.343c1.755-.697,3-2.403,3-4.407Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+									<line x1="6.897" y1="13.25" x2="11.103" y2="13.25" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></line>
+								</g>
+							</svg>
+							Learning
+
+							<div class="absolute w-full top-0 left-0 right-0">
+								<div class="absolute top-1.5 left-1 w-1 h-1 ring-1 ring-neutral-300 border border-neutral-100 drop-shadow bg-background rounded-full" />
+								<div class="absolute top-1.5 right-1 w-1 h-1 ring-1 ring-neutral-300 border border-neutral-100 drop-shadow bg-background rounded-full" />
+								<div class="h-[1px] bg-neutral-400 absolute top-1.5 left-1 right-1 brightness-125" />
+							</div>
+						</span>
+						<span class="py-4 px-4 bg-[#fffffc]">
+							Elixir
+						</span>
+					</li>
+
+					<li class="grid border border-separator rounded-md overflow-hidden shadow-md ring-1 ring-neutral-100 flex-shrink-0">
+						<span class="relative bg-[#f3f3f3] inline-flex items-center gap-2 text-xs border-b border-b-separator pt-4 pb-3 pl-4 pr-5">
+							<svg width="15" height="15" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
+								<g fill="currentColor" stroke="currentColor">
+									<line x1="9" y1=".75" x2="9" y2="1.75" fill="none" stroke-linecap="round" stroke-linejoin="round"></line>
+									<line x1="14.834" y1="3.166" x2="14.127" y2="3.873" fill="none" stroke-linecap="round" stroke-linejoin="round"></line>
+									<line x1="17.25" y1="9" x2="16.25" y2="9" fill="none" stroke-linecap="round" stroke-linejoin="round"></line>
+									<line x1="3.166" y1="3.166" x2="3.873" y2="3.873" fill="none" stroke-linecap="round" stroke-linejoin="round"></line>
+									<line x1=".75" y1="9" x2="1.75" y2="9" fill="none" stroke-linecap="round" stroke-linejoin="round"></line>
+									<path d="M13.75,9c0-2.959-2.705-5.286-5.777-4.642-1.872,.392-3.35,1.957-3.658,3.844-.381,2.339,.951,4.417,2.935,5.205v2.343c0,.552,.448,1,1,1h1.5c.552,0,1-.448,1-1v-2.343c1.755-.697,3-2.403,3-4.407Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+									<line x1="6.897" y1="13.25" x2="11.103" y2="13.25" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></line>
+								</g>
+							</svg>
+							Learning
+
+							<div class="absolute w-full top-0 left-0 right-0">
+								<div class="absolute top-1.5 left-1 w-1 h-1 ring-1 ring-neutral-300 border border-neutral-100 drop-shadow bg-background rounded-full" />
+								<div class="absolute top-1.5 right-1 w-1 h-1 ring-1 ring-neutral-300 border border-neutral-100 drop-shadow bg-background rounded-full" />
+								<div class="h-[1px] bg-neutral-400 absolute top-1.5 left-1 right-1 brightness-125" />
+							</div>
+						</span>
+						<span class="py-4 px-4 bg-[#fffffc]">
+							WebGL
+						</span>
+					</li>
+
+					<li class="grid border border-separator rounded-md overflow-hidden shadow-md ring-1 ring-neutral-100 flex-shrink-0">
+						<span class="relative bg-[#f3f3f3] inline-flex items-center gap-2 text-xs border-b border-b-separator pt-4 pb-3 pl-4 pr-5">
+							<svg width="15" height="15" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
+								<g fill="currentColor" stroke="currentColor">
+									<line x1="9" y1=".75" x2="9" y2="1.75" fill="none" stroke-linecap="round" stroke-linejoin="round"></line>
+									<line x1="14.834" y1="3.166" x2="14.127" y2="3.873" fill="none" stroke-linecap="round" stroke-linejoin="round"></line>
+									<line x1="17.25" y1="9" x2="16.25" y2="9" fill="none" stroke-linecap="round" stroke-linejoin="round"></line>
+									<line x1="3.166" y1="3.166" x2="3.873" y2="3.873" fill="none" stroke-linecap="round" stroke-linejoin="round"></line>
+									<line x1=".75" y1="9" x2="1.75" y2="9" fill="none" stroke-linecap="round" stroke-linejoin="round"></line>
+									<path d="M13.75,9c0-2.959-2.705-5.286-5.777-4.642-1.872,.392-3.35,1.957-3.658,3.844-.381,2.339,.951,4.417,2.935,5.205v2.343c0,.552,.448,1,1,1h1.5c.552,0,1-.448,1-1v-2.343c1.755-.697,3-2.403,3-4.407Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+									<line x1="6.897" y1="13.25" x2="11.103" y2="13.25" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></line>
+								</g>
+							</svg>
+							Learning
+
+							<div class="absolute w-full top-0 left-0 right-0">
+								<div class="absolute top-1.5 left-1 w-1 h-1 ring-1 ring-neutral-300 border border-neutral-100 drop-shadow bg-background rounded-full" />
+								<div class="absolute top-1.5 right-1 w-1 h-1 ring-1 ring-neutral-300 border border-neutral-100 drop-shadow bg-background rounded-full" />
+								<div class="h-[1px] bg-neutral-400 absolute top-1.5 left-1 right-1 brightness-125" />
+							</div>
+						</span>
+						<span class="py-4 px-4 bg-[#fffffc]">
+							Game Development
+						</span>
+					</li>
+
+					<li class="grid border border-separator rounded-md overflow-hidden shadow-md ring-1 ring-neutral-100 flex-shrink-0">
+						<span class="relative bg-[#f3f3f3] inline-flex items-center gap-2 text-xs border-b border-b-separator pt-4 pb-3 pl-4 pr-5">
+							<svg width="15" height="15" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
+								<g fill="currentColor" stroke="currentColor">
+									<path d="M9.533,5.437l-3.331-3.331c-.391-.391-1.024-.391-1.414,0l-2.682,2.682c-.391,.391-.391,1.024,0,1.414l3.331,3.331" fill="none" stroke-linecap="round" stroke-linejoin="round"></path>
+									<path d="M8.467,12.563l3.331,3.331c.391,.391,1.024,.391,1.414,0l2.682-2.682c.391-.391,.391-1.024,0-1.414l-1.581-1.581" fill="none" stroke-linecap="round" stroke-linejoin="round"></path>
+									<line x1="3.416" y1="7.513" x2="5.184" y2="5.745" fill="none" stroke-linecap="round" stroke-linejoin="round"></line>
+									<line x1="10.487" y1="14.584" x2="12.255" y2="12.816" fill="none" stroke-linecap="round" stroke-linejoin="round"></line>
+									<path d="M2.25,15.75s3.599-.568,4.546-1.515c.947-.947,8.577-8.577,8.577-8.577,.837-.837,.837-2.194,0-3.03-.837-.837-2.194-.837-3.03,0,0,0-7.63,7.63-8.577,8.577s-1.515,4.546-1.515,4.546h0Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+									<line x1="11.121" y1="3.848" x2="14.152" y2="6.879" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></line>
+								</g>
+							</svg>
+							Building
+
+							<div class="absolute w-full top-0 left-0 right-0">
+								<div class="absolute top-1.5 left-1 w-1 h-1 ring-1 ring-neutral-300 border border-neutral-100 drop-shadow bg-background rounded-full" />
+								<div class="absolute top-1.5 right-1 w-1 h-1 ring-1 ring-neutral-300 border border-neutral-100 drop-shadow bg-background rounded-full" />
+								<div class="h-[1px] bg-neutral-400 absolute top-1.5 left-1 right-1 brightness-125" />
+							</div>
+						</span>
+						<span class="py-4 px-4 bg-[#fffffc]">
+							This website
+						</span>
+					</li>
+
+					<li class="grid border border-separator rounded-md overflow-hidden shadow-md ring-1 ring-neutral-100 flex-shrink-0">
+						<span class="relative bg-[#f3f3f3] inline-flex items-center gap-2 text-xs border-b border-b-separator pt-4 pb-3 pl-4 pr-5">
+							<svg width="15" height="15" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
+								<g fill="currentColor" stroke="currentColor">
+									<path d="M9.533,5.437l-3.331-3.331c-.391-.391-1.024-.391-1.414,0l-2.682,2.682c-.391,.391-.391,1.024,0,1.414l3.331,3.331" fill="none" stroke-linecap="round" stroke-linejoin="round"></path>
+									<path d="M8.467,12.563l3.331,3.331c.391,.391,1.024,.391,1.414,0l2.682-2.682c.391-.391,.391-1.024,0-1.414l-1.581-1.581" fill="none" stroke-linecap="round" stroke-linejoin="round"></path>
+									<line x1="3.416" y1="7.513" x2="5.184" y2="5.745" fill="none" stroke-linecap="round" stroke-linejoin="round"></line>
+									<line x1="10.487" y1="14.584" x2="12.255" y2="12.816" fill="none" stroke-linecap="round" stroke-linejoin="round"></line>
+									<path d="M2.25,15.75s3.599-.568,4.546-1.515c.947-.947,8.577-8.577,8.577-8.577,.837-.837,.837-2.194,0-3.03-.837-.837-2.194-.837-3.03,0,0,0-7.63,7.63-8.577,8.577s-1.515,4.546-1.515,4.546h0Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+									<line x1="11.121" y1="3.848" x2="14.152" y2="6.879" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></line>
+								</g>
+							</svg>
+							Building
+
+							<div class="absolute w-full top-0 left-0 right-0">
+								<div class="absolute top-1.5 left-1 w-1 h-1 ring-1 ring-neutral-300 border border-neutral-100 drop-shadow bg-background rounded-full" />
+								<div class="absolute top-1.5 right-1 w-1 h-1 ring-1 ring-neutral-300 border border-neutral-100 drop-shadow bg-background rounded-full" />
+								<div class="h-[1px] bg-neutral-400 absolute top-1.5 left-1 right-1 brightness-125" />
+							</div>
+						</span>
+						<span class="py-4 px-4 bg-[#fffffc]">
+							Untitled game project
+						</span>
+					</li>
+					
+					<li class="grid border border-separator rounded-md overflow-hidden shadow-md ring-1 ring-neutral-100 flex-shrink-0">
+						<span class="relative bg-[#f3f3f3] inline-flex items-center gap-2 text-xs border-b border-b-separator pt-4 pb-3 pl-4 pr-5">
+							<svg width="15" height="15" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
+								<g fill="currentColor" stroke="currentColor">
+									<path d="M9.533,5.437l-3.331-3.331c-.391-.391-1.024-.391-1.414,0l-2.682,2.682c-.391,.391-.391,1.024,0,1.414l3.331,3.331" fill="none" stroke-linecap="round" stroke-linejoin="round"></path>
+									<path d="M8.467,12.563l3.331,3.331c.391,.391,1.024,.391,1.414,0l2.682-2.682c.391-.391,.391-1.024,0-1.414l-1.581-1.581" fill="none" stroke-linecap="round" stroke-linejoin="round"></path>
+									<line x1="3.416" y1="7.513" x2="5.184" y2="5.745" fill="none" stroke-linecap="round" stroke-linejoin="round"></line>
+									<line x1="10.487" y1="14.584" x2="12.255" y2="12.816" fill="none" stroke-linecap="round" stroke-linejoin="round"></line>
+									<path d="M2.25,15.75s3.599-.568,4.546-1.515c.947-.947,8.577-8.577,8.577-8.577,.837-.837,.837-2.194,0-3.03-.837-.837-2.194-.837-3.03,0,0,0-7.63,7.63-8.577,8.577s-1.515,4.546-1.515,4.546h0Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+									<line x1="11.121" y1="3.848" x2="14.152" y2="6.879" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></line>
+								</g>
+							</svg>
+							Building
+
+							<div class="absolute w-full top-0 left-0 right-0">
+								<div class="absolute top-1.5 left-1 w-1 h-1 ring-1 ring-neutral-300 border border-neutral-100 drop-shadow bg-background rounded-full" />
+								<div class="absolute top-1.5 right-1 w-1 h-1 ring-1 ring-neutral-300 border border-neutral-100 drop-shadow bg-background rounded-full" />
+								<div class="h-[1px] bg-neutral-400 absolute top-1.5 left-1 right-1 brightness-125" />
+							</div>
+						</span>
+						<span class="py-4 px-4 bg-[#fffffc]">
+							Untitled brand project
+						</span>
+					</li>
+				</ul>
+
+				<div class="h-[1px] w-full bg-neutral-300 absolute z-[-1] top-1.5" />
+			</section>
 		</section>
 	</main>
 
-	<footer class="mt-8">
-		<p>© Niklas Lepistö 2023</p>
+	<footer class="mt-8 w-full p-16 text-right text-xs text-neutral-300">
+		<p>© Niklas Lepistö 2024</p>
 	</footer>
 </Layout>
 
