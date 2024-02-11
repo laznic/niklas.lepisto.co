@@ -39,34 +39,34 @@ const socials = [
 
 			<section class="md:col-span-3 items-center grid order-first md:order-last">
 				<div class="grid gap-4">
-				<h1 class="text-4xl leading-none">
-					Niklas
-					<span class="inline-block relative group">
-						<span class="w-[17%] h-[12%] bg-black absolute -right-[2%] top-[7.5%] block"></span>
-						<span class="w-[2%] h-[20%] bg-background absolute left-[14%] bottom-[17.5%] block"></span>
-						Lepisto
-					</span>
-				</h1>
+					<h1 class="text-4xl leading-none">
+						Niklas
+						<span class="inline-block relative group">
+							<span class="w-[17%] h-[12%] bg-black absolute -right-[2%] top-[7.5%] block"></span>
+							<span class="w-[2%] h-[20%] bg-background absolute left-[14%] bottom-[17.5%] block"></span>
+							Lepisto
+						</span>
+					</h1>
 
-				<h2 class="prose text-md">
-					I'm a Full Stack Developer with Frontend focus. I love to create experiences and experiment with new technologies, and I'm always looking to learn more about anything.
-					I try to inspire others to learn, expirement, and go after what they truly want to do by being as open as I can.
-				</h2>
+					<h2 class="prose text-md">
+						I'm a Full Stack Developer with Frontend focus. I love to create experiences and experiment with new technologies, and I'm always looking to learn more about anything.
+						I try to inspire others to learn, expirement, and go after what they truly want to do by being as open as I can.
+					</h2>
 
-				<ul class="flex items-center gap-4">
-					{socials.map((social) => (
-						<li>
-							<a
-							title={social.name}
-							href={social.url}
-							class="block p-2 rounded bg-gradient-to-b from-neutral-100 to-neutral-50 border border-background ring-1 ring-slate-200 hover:-translate-y-1 hover:shadow-xl brightness-100 hover:brightness-[102.5%] transition-all">
-							<social.icon size={30} classes={'group-hover:scale-90'}/>
-							 <span class="sr-only">{social.name}</span>
-							</a>
-						</li>
-					))}
-				</ul>
-			</div>
+					<ul class="flex items-center gap-4">
+						{socials.map((social) => (
+							<li>
+								<a
+								title={social.name}
+								href={social.url}
+								class="block p-2 rounded bg-gradient-to-b from-neutral-100 to-neutral-50 border border-background ring-1 ring-slate-200 hover:-translate-y-1 hover:shadow-xl brightness-100 hover:brightness-[102.5%] transition-all">
+								<social.icon size={30} classes={'group-hover:scale-90'}/>
+								<span class="sr-only">{social.name}</span>
+								</a>
+							</li>
+						))}
+					</ul>
+				</div>
 			</section>
 		</header>
 
@@ -535,8 +535,9 @@ const socials = [
 		</section>
 	</main>
 
-	<footer class="mt-8 w-full p-16 text-right text-xs text-neutral-300">
-		<p>© Niklas Lepistö 2024</p>
+	<footer class="mt-8 w-full p-8 xl:p-16 grid text-right text-xs text-neutral-300 justify-end">
+		<svg class="w-24 ml-auto mr-0 mb-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 123.41 94.84"><defs><style>.cls-1{fill:transparent;}.cls-2{fill:#d4d4d4;}</style></defs><g id="Layer_5"><g id="logo_on_light_bg"><g><rect class="cls-1" x="6.15" y="6.21" width="111.11" height="82.41"/><path class="cls-2" d="M123.41,94.84H0V0H123.41V94.84ZM6.15,88.62H117.26V6.21H6.15V88.62Z"/><polygon class="cls-1" points="24.67 60.13 97.28 17.96 99.71 28.3 97.28 48.13 89.54 60.13 75.4 70.46 65.28 72.13 52.54 70.8 45.71 68.13 36.87 62.3 24.67 60.13"/><path fill="#d4d4d4" d="M110.99,12.45h-27.63l-9.53,5.68h16.54L12.43,64.55h11.09s.01,0,.01,0h13.18c7.03,6.22,16.27,10,26.37,10,.95,0,1.88-.04,2.81-.1l-5.42,7.95h6.86l6.32-9.28c16.86-4.65,29.29-20.12,29.29-38.44,0-5.52-1.13-10.77-3.16-15.55l11.19-6.67Zm-41.44,24.69l10.12-6.03s0,0,0,0c1.05,1.15,1.67,2.7,1.57,4.4-.17,3-2.59,5.46-5.59,5.66-2.82,.19-5.25-1.55-6.11-4.03,0,0,0,0,0,0Zm1.02,30.9c-.12,.03-.24,.05-.36,.08-2.3,.49-4.68,.75-7.12,.75-10.52,0-19.94-4.77-26.22-12.26l6.43-3.83h0c5.03,5.25,12.14,8.5,20.01,8.42,14.7-.14,26.73-12.05,27.04-26.74,.06-3.12-.4-6.13-1.3-8.94l5.83-3.47c1.56,3.91,2.41,8.16,2.41,12.62,0,16.29-11.45,29.95-26.72,33.37Z"/></g></g></g></svg>
+		<p class="w-fit">© Niklas Lepistö 2024</p>
 	</footer>
 </Layout>
 
