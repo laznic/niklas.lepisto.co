@@ -32,23 +32,23 @@ const socials = [
 
 <Layout title="Niklas Lepistö - Experimental Web Dev">
 	<main class="grid">
-		<header class="grid grid-cols-5 gap-24 p-8 py-24 container mx-auto">
-			<div class="col-span-2 brightness-105 rounded-lg overflow-hidden shadow drop-shadow-2xl ring-2 ring-neutral-300 border border-background">
-				<img class="w-full object-cover h-full" src="/images/headshot-2.webp" alt="Niklas Lepistö">
+		<header class="grid grid-cols-1 md:grid-cols-5 gap-12 md:gap-24 p-8 pb-12 md:py-24 container mx-auto">
+			<div class="md:col-span-2 brightness-105 rounded-lg overflow-hidden shadow drop-shadow-2xl ring-2 ring-neutral-300 border border-background order-last md:order-first">
+				<img class="w-full object-cover h-full max-h-1/2 md:max-h-auto object-top" src="/images/headshot-2.webp" alt="Niklas Lepistö">
 			</div>
 
-			<section class="col-span-3 items-center grid">
+			<section class="md:col-span-3 items-center grid order-first md:order-last">
 				<div class="grid gap-4">
-				<h1 class="text-4xl">
+				<h1 class="text-4xl leading-none">
 					Niklas
 					<span class="inline-block relative group">
-						<span class="w-14 h-3.5 bg-black absolute -right-[2%] top-[22%] block"></span>
-						<span class="w-1.5 h-4 bg-background absolute left-[14.75%] bottom-[30%] block"></span>
+						<span class="w-[17%] h-[12%] bg-black absolute -right-[2%] top-[7.5%] block"></span>
+						<span class="w-[2%] h-[20%] bg-background absolute left-[14%] bottom-[17.5%] block"></span>
 						Lepisto
 					</span>
 				</h1>
 
-				<h2 class="prose prose-2xl">
+				<h2 class="prose text-md">
 					I'm a Full Stack Developer with Frontend focus. I love to create experiences and experiment with new technologies, and I'm always looking to learn more about anything.
 					I try to inspire others to learn, expirement, and go after what they truly want to do by being as open as I can.
 				</h2>
@@ -59,7 +59,7 @@ const socials = [
 							<a
 							title={social.name}
 							href={social.url}
-							class="block p-2 rounded bg-gradient-to-b from-neutral-100 to-neutral-50 border border-background ring-1 ring-slate-200 hover:-translate-y-1 hover:shadow-xl brightness-100 hover:brightness-105 transition-all">
+							class="block p-2 rounded bg-gradient-to-b from-neutral-100 to-neutral-50 border border-background ring-1 ring-slate-200 hover:-translate-y-1 hover:shadow-xl brightness-100 hover:brightness-[102.5%] transition-all">
 							<social.icon size={30} classes={'group-hover:scale-90'}/>
 							 <span class="sr-only">{social.name}</span>
 							</a>
@@ -71,29 +71,29 @@ const socials = [
 		</header>
 
 		<section class="w-full bg-gradient-to-b to-[#f3f3f3] from-background">
-			<div class="container mx-auto p-8 pb-16 mb-24">
+			<div class="container mx-auto p-8 md:pb-16 mb-12 md:mb-24">
 				<h2>Some brands I've worked with:</h2>
 				<span class="text-xs italic">as a direct employee or in a client project via an employer</span>
 
-				<ul class="flex items-center flex-wrap gap-12 justify-between mt-8">
+				<ul class="flex items-center flex-wrap gap-20 md:gap-16 md:justify-between mt-8">
 					<li class="max-w-40 text-black">
 						<EricssonLogo  />
 					</li>
 					<li class="max-w-36 relative">
-						<span role="tooltip" class="px-4 py-2 text-center bg-neutral-700 text-neutral-50 rounded ring-2 ring-neutral-200 border border-neutral-200 text-xs absolute block w-fit whitespace-nowrap drop-shadow-xl shadow-lg -bottom-16 left-0 right-0 mx-auto">
+						<span role="tooltip" class="px-3 py-1 text-center bg-neutral-700 text-neutral-50 rounded ring-2 ring-neutral-200 border border-neutral-200 text-xs absolute block w-fit whitespace-nowrap drop-shadow-xl shadow-lg -bottom-12 left-0 right-0 mx-auto">
 							<span class="block absolute border-r-8 border-r-transparent border-l-8 border-l-transparent border-b-8 border-b-neutral-700 w-0 h-0 -top-2 left-0 right-0 mx-auto" />
 							I work here!
 						</span>
 						<BrellaLogo />
+					</li>
+					<li class="max-w-16">
+						<MunchfamLogo  />
 					</li>
 					<li class="max-w-48">
 						<GoforeLogo />
 					</li>
 					<li class="max-w-48">
 						<CapgeminiLogo />
-					</li>
-					<li class="max-w-16">
-						<MunchfamLogo  />
 					</li>
 					<li class="max-w-48">
 						<ValuenexLogo />
@@ -106,7 +106,7 @@ const socials = [
 			<h2 class="text-neutral-200 text-3xl z-10 relative mx-auto container px-8">Projects</h2>
 
 			<ul class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10 mx-auto max-w-[1600px] px-8">
-				<li class="p-4 rounded-md bg-gradient-to-b from-[#f3f3f3] to-[#fffffc]  drop-shadow-2xl shadow-md border-b-4 border border-background border-b-stone-300 hover:shadow-xl transition-all hover:-translate-y-1 brightness-100 hover:brightness-105">
+				<li class="p-4 rounded-md bg-gradient-to-b from-[#f3f3f3] to-[#fffffc]  drop-shadow-2xl shadow-md border-b-4 border border-background border-b-stone-300 hover:shadow-xl transition-all hover:-translate-y-1 brightness-100 hover:brightness-[102.5%]">
 					<a class="flex items-center justify-between gap-4 text-sm">
 						Supabase Hackathon: Most visually pleasing
 
@@ -150,7 +150,7 @@ const socials = [
 					</ul>
 				</li>
 
-				<li class="p-4 rounded-md bg-gradient-to-b from-[#f3f3f3] to-[#fffffc]  drop-shadow-2xl shadow-md border-b-4 border border-background border-b-stone-300 hover:shadow-xl transition-all hover:-translate-y-1 brightness-100 hover:brightness-105">
+				<li class="p-4 rounded-md bg-gradient-to-b from-[#f3f3f3] to-[#fffffc]  drop-shadow-2xl shadow-md border-b-4 border border-background border-b-stone-300 hover:shadow-xl transition-all hover:-translate-y-1 brightness-100 hover:brightness-[102.5%]">
 					<a class="flex items-center justify-between gap-4 text-sm">
 						Supabase Hackathon: Most visually pleasing
 
@@ -194,7 +194,7 @@ const socials = [
 					</ul>
 				</li>
 
-				<li class="p-4 rounded-md bg-gradient-to-b from-[#f3f3f3] to-[#fffffc]  drop-shadow-2xl shadow-md border-b-4 border border-background border-b-stone-300 hover:shadow-xl transition-all hover:-translate-y-1 brightness-100 hover:brightness-105">
+				<li class="p-4 rounded-md bg-gradient-to-b from-[#f3f3f3] to-[#fffffc]  drop-shadow-2xl shadow-md border-b-4 border border-background border-b-stone-300 hover:shadow-xl transition-all hover:-translate-y-1 brightness-100 hover:brightness-[102.5%]">
 					<a class="flex items-center justify-between gap-4 text-sm">
 						Supabase Hackathon: Most visually pleasing
 
@@ -238,7 +238,7 @@ const socials = [
 					</ul>
 				</li>
 
-				<li class="p-4 rounded-md bg-gradient-to-b from-[#f3f3f3] to-[#fffffc]  drop-shadow-2xl shadow-md border-b-4 border border-background border-b-stone-300 hover:shadow-xl transition-all hover:-translate-y-1 brightness-100 hover:brightness-105">
+				<li class="p-4 rounded-md bg-gradient-to-b from-[#f3f3f3] to-[#fffffc]  drop-shadow-2xl shadow-md border-b-4 border border-background border-b-stone-300 hover:shadow-xl transition-all hover:-translate-y-1 brightness-100 hover:brightness-[102.5%]">
 					<a class="flex items-center justify-between gap-4 text-sm">
 						Supabase Hackathon: Most fun/interesting
 
@@ -269,7 +269,7 @@ const socials = [
 					</ul>
 				</li>
 
-				<li class="p-4 rounded-md bg-gradient-to-b from-[#f3f3f3] to-[#fffffc]  drop-shadow-2xl shadow-md border-b-4 border border-background border-b-stone-300 hover:shadow-xl transition-all hover:-translate-y-1 brightness-100 hover:brightness-105">
+				<li class="p-4 rounded-md bg-gradient-to-b from-[#f3f3f3] to-[#fffffc]  drop-shadow-2xl shadow-md border-b-4 border border-background border-b-stone-300 hover:shadow-xl transition-all hover:-translate-y-1 brightness-100 hover:brightness-[102.5%]">
 					<h3 class="prose text-md">AI Coloring book</h3>
 					<p class="prose border-b border-slate-200 pb-2">
 						A digital "coloring book" app powered by an AI.
@@ -300,7 +300,7 @@ const socials = [
 					</ul>
 				</li>
 
-			<li class="p-4 rounded-md bg-gradient-to-b from-[#f3f3f3] to-[#fffffc]  drop-shadow-2xl shadow-md border-b-4 border border-background border-b-stone-300 hover:shadow-xl transition-all hover:-translate-y-1 brightness-100 hover:brightness-105">
+			<li class="p-4 rounded-md bg-gradient-to-b from-[#f3f3f3] to-[#fffffc]  drop-shadow-2xl shadow-md border-b-4 border border-background border-b-stone-300 hover:shadow-xl transition-all hover:-translate-y-1 brightness-100 hover:brightness-[102.5%]">
 					<h3 class="prose text-md">Quickplay</h3>
 					<p class="prose border-b border-slate-200 pb-2">
 						An automated tournament platform that runs on Discord.
@@ -333,7 +333,7 @@ const socials = [
 			</h2>
 
 			<section class="relative">
-				<ul class="flex gap-8 z-10 overflow-x-auto px-8 scroll-smooth snap-x justify-between">
+				<ul class="flex gap-8 z-10 overflow-x-auto pb-8 px-8 scroll-smooth snap-x 2xl:justify-evenly">
 					<li class="grid border border-separator rounded-md overflow-hidden shadow-md  ring-1 ring-neutral-100 flex-shrink-0">
 						<span class="relative bg-[#f3f3f3] inline-flex items-center gap-2 text-xs border-b border-b-separator pt-4 pb-3 pl-4 pr-5">
 							<svg width="15" height="15" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
