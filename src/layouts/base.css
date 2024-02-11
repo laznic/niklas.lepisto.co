@@ -33,7 +33,7 @@ body {
 @layer base {
   :root {
     --color-primary: 198deg 93% 60%;
-    --color-background: 0deg 0% 100%;
+    --color-background: 120deg 27% 98%;
     --color-separator: 220deg 6% 90%;
   }
 

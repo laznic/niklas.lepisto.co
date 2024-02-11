@@ -34,7 +34,7 @@ const socials = [
 	<main class="mx-auto container grid gap-20">
 		<header class="grid grid-cols-3 gap-8">
 			<div class="col-span-1">
-				<img src="/images/headshot-2.webp" alt="Niklas Lepistö">
+				<!-- <img src="/images/headshot-2.webp" alt="Niklas Lepistö"> -->
 			</div>
 
 			<section class="col-span-2 items-center grid">
@@ -59,7 +59,7 @@ const socials = [
 							<a
 							title={social.name}
 							href={social.url}
-							class="block p-2 rounded-md bg-gradient-to-br to-[hsla(0,0%,85%,1)] from-transparent shadow-[-2px_-2px_10px_hsla(0,0%,100%,1),2px_2px_10px_hsla(0,0%,85%,1)] hover:shadow-[-7px_-7px_15px_hsla(0,0%,100%,1),7px_7px_15px_hsla(0,0%,85%,1)] hover:from-[hsla(0,0%,92%,1)] hover:to-transparent group">
+							class="block p-2 rounded bg-gradient-to-b from-neutral-100 to-neutral-50 border border-background ring-1 ring-slate-200 hover:-translate-y-1 hover:shadow-xl transition-all">
 							<social.icon size={30} classes={'group-hover:scale-90'}/>
 							 <span class="sr-only">{social.name}</span>
 							</a>
@@ -100,17 +100,18 @@ const socials = [
 			<h2>Highlighted projects</h2>
 
 			<ul class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
-				<li class="p-4 rounded-md shadow-md shadow-amber-100 hover:shadow-amber-200 hover:shadow-xl transition-all bg-gradient-to-br from-amber-200 to-70% to-background">
-					<a style="text-shadow: 1px 1px 0 hsl(50, 90%, 95%);"  class="inline-flex gap-2 items-center px-2 py-1 border border-yellow-100 rounded-md text-xs bg-gradient-to-br shadow-[-2px_-2px_10px_hsla(50,0%,100%,1),2px_2px_8px_hsla(50,100%,45%,1)] from-[hsla(50,98%,50%,1)] to-65% to-[hsla(51,99%,85%,1)]">
-						<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 18 18">
-							<g fill="currentColor" stroke="currentColor">
-								<path d="M9.643,12.133l.777-.652c.18-.151,.408-.234,.643-.234h1.014c.485,0,.901-.348,.985-.826l.176-.999c.041-.232,.162-.441,.342-.592l.777-.652c.372-.312,.466-.846,.223-1.266l-.507-.879c-.118-.204-.16-.442-.119-.674l.176-.999c.084-.478-.187-.947-.643-1.113l-.953-.347c-.221-.08-.406-.236-.524-.44l-.507-.879c-.243-.42-.752-.606-1.208-.44l-.953,.347c-.221,.08-.463,.08-.684,0l-.953-.347c-.456-.166-.965,.019-1.208,.44l-.507,.879c-.118,.204-.303,.359-.524,.44l-.953,.347c-.456,.166-.727,.635-.643,1.113l.176,.999c.041,.232-.001,.47-.119,.674l-.507,.879c-.243,.42-.149,.954,.223,1.266l.777,.652c.18,.151,.301,.361,.342,.592l.176,.999c.084,.478,.5,.826,.985,.826h1.014c.235,0,.463,.083,.643,.234l.777,.652c.372,.312,.914,.312,1.286,0Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
-								<polyline points="12.25 13.75 12.25 17.25 9 14.75 5.75 17.25 5.75 13.75" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></polyline>
-								<circle cx="9" cy="6.724" r="2" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></circle>
-							</g>
-						</svg>
-
+				<li class="p-4 rounded-md bg-gradient-to-b from-neutral-100 to-neutral-50 border border-background ring-1 ring-slate-200 hover:-translate-y-1 hover:shadow-xl transition-all">
+					<a class="flex items-center justify-between gap-4 text-sm">
 						Supabase Hackathon: Most visually pleasing
+
+						<div class="relative">
+							<span class="absolute z-20 left-0 right-0 mx-auto text-center block top-1 font-bold text-amber-800">1</span>
+							<div class="relative z-10 drop-shadow-md rounded-full inline-flex gap-2 items-center p-3 bg-gradient-to-b to-yellow-400 from-amber-600 via-orange-300 border border-amber-400 ring-2 ring-amber-400 text-yellow-100 shadow-md" />
+							<div
+								class="border-red-400 border-2 bg-gradient-to-b from-rose-500 to-red-700 w-6 h-20 z-0 absolute -top-5 left-0 right-0 mx-auto rounded-sm"
+								style="clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 50% 80%, 0% 100%);"
+							/>
+						</div>
 					</a>
 
 					<h3 class="prose prose-lg">Mirror of Loss</h3>	
@@ -141,17 +142,18 @@ const socials = [
 					</ul>
 				</li>
 
-				<li class="p-4 rounded-md shadow-md shadow-amber-100 hover:shadow-amber-200 hover:shadow-xl transition-all bg-gradient-to-br from-amber-200 to-70% to-background">
-					<a style="text-shadow: 1px 1px 0 hsl(50, 90%, 95%);"  class="inline-flex gap-2 items-center px-2 py-1 border border-yellow-100 rounded-md text-xs bg-gradient-to-br shadow-[-2px_-2px_10px_hsla(0,0%,100%,1),2px_2px_8px_hsla(50,100%,45%,1)] from-[hsla(50,98%,50%,1)] to-65% to-[hsla(51,99%,85%,1)]">
-						<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 18 18">
-							<g fill="currentColor" stroke="currentColor">
-								<path d="M9.643,12.133l.777-.652c.18-.151,.408-.234,.643-.234h1.014c.485,0,.901-.348,.985-.826l.176-.999c.041-.232,.162-.441,.342-.592l.777-.652c.372-.312,.466-.846,.223-1.266l-.507-.879c-.118-.204-.16-.442-.119-.674l.176-.999c.084-.478-.187-.947-.643-1.113l-.953-.347c-.221-.08-.406-.236-.524-.44l-.507-.879c-.243-.42-.752-.606-1.208-.44l-.953,.347c-.221,.08-.463,.08-.684,0l-.953-.347c-.456-.166-.965,.019-1.208,.44l-.507,.879c-.118,.204-.303,.359-.524,.44l-.953,.347c-.456,.166-.727,.635-.643,1.113l.176,.999c.041,.232-.001,.47-.119,.674l-.507,.879c-.243,.42-.149,.954,.223,1.266l.777,.652c.18,.151,.301,.361,.342,.592l.176,.999c.084,.478,.5,.826,.985,.826h1.014c.235,0,.463,.083,.643,.234l.777,.652c.372,.312,.914,.312,1.286,0Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
-								<polyline points="12.25 13.75 12.25 17.25 9 14.75 5.75 17.25 5.75 13.75" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></polyline>
-								<circle cx="9" cy="6.724" r="2" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></circle>
-							</g>
-						</svg>
-
+				<li class="p-4 rounded-md bg-gradient-to-b from-neutral-100 to-neutral-50 border border-background ring-1 ring-slate-200 hover:-translate-y-1 hover:shadow-xl transition-all">
+					<a class="flex items-center justify-between gap-4 text-sm">
 						Supabase Hackathon: Most visually pleasing
+
+						<div class="relative">
+							<span class="absolute z-20 left-0 right-0 mx-auto text-center block top-1 font-bold text-amber-800">1</span>
+							<div class="relative z-10 drop-shadow-md rounded-full inline-flex gap-2 items-center p-3 bg-gradient-to-b to-yellow-400 from-amber-600 via-orange-300 border border-amber-400 ring-2 ring-amber-400 text-yellow-100 shadow-md" />
+							<div
+								class="border-red-400 border-2 bg-gradient-to-b from-rose-500 to-red-700 w-6 h-20 z-0 absolute -top-5 left-0 right-0 mx-auto rounded-sm"
+								style="clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 50% 80%, 0% 100%);"
+							/>
+						</div>
 					</a>
 
 					<h3 class="prose prose-lg">Doors of Abyss: The Endless Chase</h3>
@@ -182,17 +184,18 @@ const socials = [
 					</ul>
 				</li>
 
-				<li class="p-4 rounded-md shadow-md shadow-amber-100 hover:shadow-amber-200 hover:shadow-xl transition-all bg-gradient-to-br from-amber-200 to-70% to-background">
-					<a style="text-shadow: 1px 1px 0 hsl(50, 90%, 95%);" class="text-s inline-flex gap-2 items-center px-2 py-1 border border-yellow-100 rounded-md text-xs bg-gradient-to-br shadow-[-2px_-2px_10px_hsla(0,0%,100%,1),2px_2px_8px_hsla(50,100%,45%,1)] from-[hsla(50,98%,50%,1)] to-65% to-[hsla(51,99%,85%,1)]">
-						<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 18 18">
-							<g fill="currentColor" stroke="currentColor">
-								<path d="M9.643,12.133l.777-.652c.18-.151,.408-.234,.643-.234h1.014c.485,0,.901-.348,.985-.826l.176-.999c.041-.232,.162-.441,.342-.592l.777-.652c.372-.312,.466-.846,.223-1.266l-.507-.879c-.118-.204-.16-.442-.119-.674l.176-.999c.084-.478-.187-.947-.643-1.113l-.953-.347c-.221-.08-.406-.236-.524-.44l-.507-.879c-.243-.42-.752-.606-1.208-.44l-.953,.347c-.221,.08-.463,.08-.684,0l-.953-.347c-.456-.166-.965,.019-1.208,.44l-.507,.879c-.118,.204-.303,.359-.524,.44l-.953,.347c-.456,.166-.727,.635-.643,1.113l.176,.999c.041,.232-.001,.47-.119,.674l-.507,.879c-.243,.42-.149,.954,.223,1.266l.777,.652c.18,.151,.301,.361,.342,.592l.176,.999c.084,.478,.5,.826,.985,.826h1.014c.235,0,.463,.083,.643,.234l.777,.652c.372,.312,.914,.312,1.286,0Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
-								<polyline points="12.25 13.75 12.25 17.25 9 14.75 5.75 17.25 5.75 13.75" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></polyline>
-								<circle cx="9" cy="6.724" r="2" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></circle>
-							</g>
-						</svg>
-
+				<li class="p-4 rounded-md bg-gradient-to-b from-neutral-100 to-neutral-50 border border-background ring-1 ring-slate-200 hover:-translate-y-1 hover:shadow-xl transition-all">
+					<a class="flex items-center justify-between gap-4 text-sm">
 						Supabase Hackathon: Most visually pleasing
+
+						<div class="relative">
+							<span class="absolute z-20 left-0 right-0 mx-auto text-center block top-1 font-bold text-amber-800">1</span>
+							<div class="relative z-10 drop-shadow-md rounded-full inline-flex gap-2 items-center p-3 bg-gradient-to-b to-yellow-400 from-amber-600 via-orange-300 border border-amber-400 ring-2 ring-amber-400 text-yellow-100 shadow-md" />
+							<div
+								class="border-red-400 border-2 bg-gradient-to-b from-rose-500 to-red-700 w-6 h-20 z-0 absolute -top-5 left-0 right-0 mx-auto rounded-sm"
+								style="clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 50% 80%, 0% 100%);"
+							/>
+						</div>
 					</a>
 
 					<h3 class="prose prose-lg">Generation: Hotdog</h3>
@@ -223,17 +226,18 @@ const socials = [
 					</ul>
 				</li>
 
-				<li class="p-4 rounded-md shadow-md shadow-amber-100 hover:shadow-amber-200 hover:shadow-xl transition-all bg-gradient-to-br from-amber-200 to-70% to-background">
-					<a style="text-shadow: 1px 1px 0 hsl(50, 90%, 95%);"  class="inline-flex gap-2 items-center px-2 py-1 border border-yellow-100 rounded-md text-xs bg-gradient-to-br shadow-[-2px_-2px_10px_hsla(0,0%,100%,1),2px_2px_8px_hsla(50,100%,45%,1)] from-[hsla(50,98%,50%,1)] to-65% to-[hsla(51,99%,85%,1)]">
-						<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 18 18">
-							<g fill="currentColor" stroke="currentColor">
-								<path d="M9.643,12.133l.777-.652c.18-.151,.408-.234,.643-.234h1.014c.485,0,.901-.348,.985-.826l.176-.999c.041-.232,.162-.441,.342-.592l.777-.652c.372-.312,.466-.846,.223-1.266l-.507-.879c-.118-.204-.16-.442-.119-.674l.176-.999c.084-.478-.187-.947-.643-1.113l-.953-.347c-.221-.08-.406-.236-.524-.44l-.507-.879c-.243-.42-.752-.606-1.208-.44l-.953,.347c-.221,.08-.463,.08-.684,0l-.953-.347c-.456-.166-.965,.019-1.208,.44l-.507,.879c-.118,.204-.303,.359-.524,.44l-.953,.347c-.456,.166-.727,.635-.643,1.113l.176,.999c.041,.232-.001,.47-.119,.674l-.507,.879c-.243,.42-.149,.954,.223,1.266l.777,.652c.18,.151,.301,.361,.342,.592l.176,.999c.084,.478,.5,.826,.985,.826h1.014c.235,0,.463,.083,.643,.234l.777,.652c.372,.312,.914,.312,1.286,0Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
-								<polyline points="12.25 13.75 12.25 17.25 9 14.75 5.75 17.25 5.75 13.75" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></polyline>
-								<circle cx="9" cy="6.724" r="2" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></circle>
-							</g>
-						</svg>
-
+				<li class="p-4 rounded-md bg-gradient-to-b from-neutral-100 to-neutral-50 border border-background ring-1 ring-slate-200 hover:-translate-y-1 hover:shadow-xl transition-all">
+					<a class="flex items-center justify-between gap-4 text-sm">
 						Supabase Hackathon: Most fun/interesting
+
+						<div class="relative">
+							<span class="absolute z-20 left-0 right-0 mx-auto text-center block top-1 font-bold text-amber-800">1</span>
+							<div class="relative z-10 drop-shadow-md rounded-full inline-flex gap-2 items-center p-3 bg-gradient-to-b to-yellow-400 from-amber-600 via-orange-300 border border-amber-400 ring-2 ring-amber-400 text-yellow-100 shadow-md" />
+							<div
+								class="border-red-400 border-2 bg-gradient-to-b from-rose-500 to-red-700 w-6 h-20 z-0 absolute -top-5 left-0 right-0 mx-auto rounded-sm"
+								style="clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 50% 80%, 0% 100%);"
+							/>
+						</div>
 					</a>
 
 					<h3 class="prose prose-lg">That Hot Dog Game</h3>
@@ -251,7 +255,7 @@ const socials = [
 					</ul>
 				</li>
 
-				<li class=" p-4 rounded-md shadow-md hover:shadow-xl transition-all">
+				<li class="p-4 rounded-md bg-gradient-to-b from-neutral-100 to-neutral-50 border border-background ring-1 ring-slate-200 hover:-translate-y-1 hover:shadow-xl transition-all">
 					<h3 class="prose prose-lg">AI Coloring book</h3>
 					<p class="prose">
 						A digital "coloring book" app powered by an AI.
@@ -278,7 +282,7 @@ const socials = [
 						</li>
 					</ul>
 				</li>
-				<li class=" p-4 rounded-md shadow-md hover:shadow-xl transition-all">
+				<li class="p-4 rounded-md bg-gradient-to-b from-neutral-100 to-neutral-50 border border-background ring-1 ring-slate-200 hover:-translate-y-1 hover:shadow-xl transition-all">
 					<h3 class="prose prose-lg">Quickplay</h3>
 					<p class="prose">
 						An automated tournament platform that runs on Discord.
@@ -443,37 +447,6 @@ const socials = [
 					<span class="px-4">
 						Untitled brand project
 					</span>
-				</li>
-			</ul>
-		</section>
-
-		<section>
-			<h2>Blog posts</h2>
-
-			<ul class="grid gap-12">
-				<li>
-					<article class="grid grid-cols-3 gap-2">
-						<aside class="col-span-1">
-							<img src="https://placehold.co/300" alt="Niklas Lepistö">
-						</aside>
-
-						<section class="col-span-2">
-							<h3 class="prose prose-2xl">How to create a custom React hook</h3>
-							<p>React hooks are a great way to share logic between components. In this post I'll show you how to create a custom hook.</p>
-						</section>
-					</article>
-				</li>
-				<li>
-					<article class="grid grid-cols-3 gap-2">
-						<aside class="col-span-1">
-							<img src="https://placehold.co/300" alt="Niklas Lepistö">
-						</aside>
-
-						<section class="col-span-2">
-							<h3 class="prose prose-2xl">How to create a custom React hook</h3>
-							<p>React hooks are a great way to share logic between components. In this post I'll show you how to create a custom hook.</p>
-						</section>
-					</article>
 				</li>
 			</ul>
 		</section>
