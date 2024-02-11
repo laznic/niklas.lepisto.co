@@ -31,7 +31,7 @@ const socials = [
 ---
 
 <Layout title="Niklas Lepistö - Experimental Web Dev">
-	<main class="mx-auto container grid gap-20">
+	<main class="grid gap-20">
 		<header class="grid grid-cols-3 gap-8">
 			<div class="col-span-1">
 				<!-- <img src="/images/headshot-2.webp" alt="Niklas Lepistö"> -->
@@ -78,7 +78,11 @@ const socials = [
 				<li class="max-w-40 text-black">
 					<EricssonLogo  />
 				</li>
-				<li class="max-w-36">
+				<li class="max-w-36 relative">
+					<span role="tooltip" class="px-2 py-1 text-center bg-neutral-800 text-neutral-50 rounded ring-2 ring-neutral-200 border border-neutral-600 text-xs absolute block w-fit whitespace-nowrap drop-shadow-xl shadow-lg -bottom-12 left-0 right-0 mx-auto">
+						<span class="block absolute border-r-8 border-r-transparent border-l-8 border-l-transparent border-b-8 border-b-neutral-800 w-0 h-0 -top-2 left-0 right-0 mx-auto" />
+						I work here!
+					</span>
 					<BrellaLogo />
 				</li>
 				<li class="max-w-48">
@@ -96,11 +100,11 @@ const socials = [
 			</ul>
 		</section>
 
-		<section>
-			<h2>Highlighted projects</h2>
+		<section class="bg-gradient-to-b from-slate-200 to-slate-100 p-8 shadow-inner border-t border-t-slate-300 border-b border-b-white">
+			<!-- <h2 class="text-slate-500 text-md">Highlighted projects</h2> -->
 
-			<ul class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
-				<li class="p-4 rounded-md bg-gradient-to-b from-neutral-100 to-neutral-50 border border-background ring-1 ring-slate-200 hover:-translate-y-1 hover:shadow-xl transition-all">
+			<ul class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10">
+				<li class="p-4 rounded-md bg-gradient-to-b from-slate-200 to-slate-50  drop-shadow-2xl shadow-md border-b-4 border border-background border-b-slate-300 hover:shadow-xl transition-all hover:-translate-y-1 brightness-100 hover:brightness-105">
 					<a class="flex items-center justify-between gap-4 text-sm">
 						Supabase Hackathon: Most visually pleasing
 
@@ -114,12 +118,14 @@ const socials = [
 						</div>
 					</a>
 
-					<h3 class="prose prose-lg">Mirror of Loss</h3>	
-					<p class="prose">
+					<h3 class="prose text-md">Mirror of Loss</h3>	
+					<p class="prose border-b border-slate-200 pb-2">
 						An AI powered WebGL experience.
+
+						<span class="block text-xs mt-2">Built with: React Three Fiber, Supabase, Stable Diffusion, Stable Audio</span>
 					</p>
 
-					<ul>
+					<ul class="border-t border-white pt-3">
 						<li>
 							<a class="inline-flex items-center gap-2 text-sm">
 								<svg width="15" height="15" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
@@ -142,7 +148,7 @@ const socials = [
 					</ul>
 				</li>
 
-				<li class="p-4 rounded-md bg-gradient-to-b from-neutral-100 to-neutral-50 border border-background ring-1 ring-slate-200 hover:-translate-y-1 hover:shadow-xl transition-all">
+				<li class="p-4 rounded-md bg-gradient-to-b from-slate-200 to-slate-50  drop-shadow-2xl shadow-md border-b-4 border border-background border-b-slate-300 hover:shadow-xl transition-all hover:-translate-y-1 brightness-100 hover:brightness-105">
 					<a class="flex items-center justify-between gap-4 text-sm">
 						Supabase Hackathon: Most visually pleasing
 
@@ -156,12 +162,14 @@ const socials = [
 						</div>
 					</a>
 
-					<h3 class="prose prose-lg">Doors of Abyss: The Endless Chase</h3>
-					<p class="prose">
+					<h3 class="prose text-md">Doors of Abyss: The Endless Chase</h3>
+					<p class="prose border-b border-slate-200 pb-2">
 						An interactive, narrative browser game.
+
+						<span class="block text-xs mt-2">Built with: React, Supabase, Stable Diffusion, Open AI</span>
 					</p>
 
-					<ul>
+					<ul class="border-t border-white pt-3">
 						<li>
 							<a href="https://doorsofabyss.com" class="inline-flex items-center gap-2 text-sm">
 								<svg width="15" height="15" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
@@ -184,7 +192,7 @@ const socials = [
 					</ul>
 				</li>
 
-				<li class="p-4 rounded-md bg-gradient-to-b from-neutral-100 to-neutral-50 border border-background ring-1 ring-slate-200 hover:-translate-y-1 hover:shadow-xl transition-all">
+				<li class="p-4 rounded-md bg-gradient-to-b from-slate-200 to-slate-50  drop-shadow-2xl shadow-md border-b-4 border border-background border-b-slate-300 hover:shadow-xl transition-all hover:-translate-y-1 brightness-100 hover:brightness-105">
 					<a class="flex items-center justify-between gap-4 text-sm">
 						Supabase Hackathon: Most visually pleasing
 
@@ -198,12 +206,14 @@ const socials = [
 						</div>
 					</a>
 
-					<h3 class="prose prose-lg">Generation: Hotdog</h3>
-					<p class="prose">
+					<h3 class="prose text-md">Generation: Hotdog</h3>
+					<p class="prose border-b border-slate-200 pb-2">
 						A hot dog experience, powered by AI.
+
+						<span class="block text-xs mt-2">Built with: React, Supabase, Stable Diffusion, Open AI</span>
 					</p>
 
-					<ul>
+					<ul class="border-t border-white pt-3">
 						<li>
 							<a href="https://generationhotdog.com" class="inline-flex items-center gap-2 text-sm">
 								<svg width="15" height="15" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
@@ -226,7 +236,7 @@ const socials = [
 					</ul>
 				</li>
 
-				<li class="p-4 rounded-md bg-gradient-to-b from-neutral-100 to-neutral-50 border border-background ring-1 ring-slate-200 hover:-translate-y-1 hover:shadow-xl transition-all">
+				<li class="p-4 rounded-md bg-gradient-to-b from-slate-200 to-slate-50  drop-shadow-2xl shadow-md border-b-4 border border-background border-b-slate-300 hover:shadow-xl transition-all hover:-translate-y-1 brightness-100 hover:brightness-105">
 					<a class="flex items-center justify-between gap-4 text-sm">
 						Supabase Hackathon: Most fun/interesting
 
@@ -240,12 +250,14 @@ const socials = [
 						</div>
 					</a>
 
-					<h3 class="prose prose-lg">That Hot Dog Game</h3>
-					<p class="prose">
+					<h3 class="prose text-md">That Hot Dog Game</h3>
+					<p class="prose border-b border-slate-200 pb-2">
 						A hot dog eating game.
+
+						<span class="block text-xs mt-2">Built with: React, Supabase</span>
 					</p>
 
-					<ul>
+					<ul class="border-t border-white pt-3">
 						<li>
 							<a href="https://github.com/laznic/hotdogs" class="inline-flex items-center gap-2 text-sm">
 								<GitHubIcon size={15} />
@@ -255,12 +267,15 @@ const socials = [
 					</ul>
 				</li>
 
-				<li class="p-4 rounded-md bg-gradient-to-b from-neutral-100 to-neutral-50 border border-background ring-1 ring-slate-200 hover:-translate-y-1 hover:shadow-xl transition-all">
-					<h3 class="prose prose-lg">AI Coloring book</h3>
-					<p class="prose">
+				<li class="p-4 rounded-md bg-gradient-to-b from-slate-200 to-slate-50  drop-shadow-2xl shadow-md border-b-4 border border-background border-b-slate-300 hover:shadow-xl transition-all hover:-translate-y-1 brightness-100 hover:brightness-105">
+					<h3 class="prose text-md">AI Coloring book</h3>
+					<p class="prose border-b border-slate-200 pb-2">
 						A digital "coloring book" app powered by an AI.
+
+						<span class="block text-xs mt-2">Built with: Elixir/Phoenix, Supabase, Stable Diffusion, Replicate</span>
 					</p>
-					<ul>
+
+					<ul class="border-t border-white pt-3">
 						<li>
 							<a href="https://maicanvas.com" class="inline-flex items-center gap-2 text-sm">
 								<svg width="15" height="15" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
@@ -282,12 +297,16 @@ const socials = [
 						</li>
 					</ul>
 				</li>
-				<li class="p-4 rounded-md bg-gradient-to-b from-neutral-100 to-neutral-50 border border-background ring-1 ring-slate-200 hover:-translate-y-1 hover:shadow-xl transition-all">
-					<h3 class="prose prose-lg">Quickplay</h3>
-					<p class="prose">
+
+				<li class="p-4 rounded-md bg-gradient-to-b from-slate-200 to-slate-50  drop-shadow-2xl shadow-md border-b-4 border border-background border-b-slate-300 hover:shadow-xl transition-all hover:-translate-y-1 brightness-100 hover:brightness-105">
+					<h3 class="prose text-md">Quickplay</h3>
+					<p class="prose border-b border-slate-200 pb-2">
 						An automated tournament platform that runs on Discord.
+
+						<span class="block text-xs mt-2">Built with: Hapi.js, Supabase</span>
 					</p>
-					<ul>
+
+					<ul class="border-t border-white pt-3">
 						<li>
 							<a href="https://quickplay.co" class="inline-flex items-center gap-2 text-sm">
 								<svg width="15" height="15" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
