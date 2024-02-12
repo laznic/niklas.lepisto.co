@@ -1,6 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import TwitterIcon from '../components/icons/TwitterIcon.astro';
+import XIcon from '../components/icons/XIcon.astro';
 import GitHubIcon from '../components/icons/GitHubIcon.astro';
 import LinkedInIcon from '../components/icons/LinkedInIcon.astro';
 import EricssonLogo from '../components/logos/EricssonLogo.astro';
@@ -15,7 +15,7 @@ const socials = [
 	{
 		name: 'Twitter',
 		url: 'https://twitter.com/laznic',
-		icon: TwitterIcon
+		icon: XIcon
 	},
 	{
 		name: 'GitHub',
@@ -50,7 +50,7 @@ const socials = [
 
 					<h2 class="prose text-md">
 						I'm a Full Stack Developer with Frontend focus. I love to create experiences and experiment with new technologies, and I'm always looking to learn more about anything.
-						I try to inspire others to learn, expirement, and go after what they truly want to do by being as open as I can.
+						I try to inspire others to learn, expirement, and go after what they truly want to do by sharing as much as I can.
 					</h2>
 
 					<ul class="flex items-center gap-4">
@@ -60,7 +60,7 @@ const socials = [
 								title={social.name}
 								href={social.url}
 								class="block p-2 rounded bg-gradient-to-b from-neutral-100 to-neutral-50 border border-background ring-1 ring-slate-200 hover:-translate-y-1 hover:shadow-xl brightness-100 hover:brightness-[102.5%] transition-all">
-								<social.icon size={30} classes={'group-hover:scale-90'}/>
+								<social.icon size={30} classes={'group-hover:scale-90 text-neutral-900'}/>
 								<span class="sr-only">{social.name}</span>
 								</a>
 							</li>
@@ -80,7 +80,7 @@ const socials = [
 						<EricssonLogo  />
 					</li>
 					<li class="max-w-36 relative">
-						<span role="tooltip" class="px-3 py-1 text-center bg-neutral-700 text-neutral-50 rounded ring-2 ring-neutral-200 border border-neutral-200 text-xs absolute block w-fit whitespace-nowrap drop-shadow-xl shadow-lg -bottom-12 left-0 right-0 mx-auto">
+						<span role="tooltip" class="px-3 py-1 text-center bg-neutral-700 text-neutral-50 rounded ring-1 ring-neutral-200 border border-neutral-200 text-xs absolute block w-fit whitespace-nowrap drop-shadow-xl shadow-lg -bottom-12 left-0 right-0 mx-auto">
 							<span class="block absolute border-r-8 border-r-transparent border-l-8 border-l-transparent border-b-8 border-b-neutral-700 w-0 h-0 -top-2 left-0 right-0 mx-auto" />
 							I work here!
 						</span>
@@ -107,7 +107,7 @@ const socials = [
 
 			<ul class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10 mx-auto max-w-[1600px] px-8">
 				<li class="p-4 rounded-md bg-gradient-to-b from-[#f3f3f3] to-[#fffffc]  drop-shadow-2xl shadow-md border-b-4 border border-background border-b-stone-300 hover:shadow-xl transition-all hover:-translate-y-1 brightness-100 hover:brightness-[102.5%]">
-					<a class="flex items-center justify-between gap-4 text-sm">
+					<a href="https://supabase.com/blog/launch-week-x-hackathon-winners#:~:text=to%20UI%20views.-,Most%20visually%20pleasing,-Winner" class="flex items-center justify-between gap-4 text-sm hover:underline">
 						Supabase Hackathon: Most visually pleasing
 
 						<div class="relative">
@@ -151,7 +151,7 @@ const socials = [
 				</li>
 
 				<li class="p-4 rounded-md bg-gradient-to-b from-[#f3f3f3] to-[#fffffc]  drop-shadow-2xl shadow-md border-b-4 border border-background border-b-stone-300 hover:shadow-xl transition-all hover:-translate-y-1 brightness-100 hover:brightness-[102.5%]">
-					<a class="flex items-center justify-between gap-4 text-sm">
+					<a href="https://supabase.com/blog/launch-week-8-hackathon-winners#:~:text=on%20Cloudflare%20pages.-,Most%20visually%20pleasing,-Winner" class="flex items-center justify-between gap-4 text-sm hover:underline">
 						Supabase Hackathon: Most visually pleasing
 
 						<div class="relative">
@@ -195,7 +195,7 @@ const socials = [
 				</li>
 
 				<li class="p-4 rounded-md bg-gradient-to-b from-[#f3f3f3] to-[#fffffc]  drop-shadow-2xl shadow-md border-b-4 border border-background border-b-stone-300 hover:shadow-xl transition-all hover:-translate-y-1 brightness-100 hover:brightness-[102.5%]">
-					<a class="flex items-center justify-between gap-4 text-sm">
+					<a href="https://supabase.com/blog/launch-week-7-hackathon-winners#:~:text=Macos%20and%20web.-,Most%20visually%20pleasing,-Winner" class="flex items-center justify-between gap-4 text-sm hover:underline">
 						Supabase Hackathon: Most visually pleasing
 
 						<div class="relative">
@@ -239,7 +239,7 @@ const socials = [
 				</li>
 
 				<li class="p-4 rounded-md bg-gradient-to-b from-[#f3f3f3] to-[#fffffc]  drop-shadow-2xl shadow-md border-b-4 border border-background border-b-stone-300 hover:shadow-xl transition-all hover:-translate-y-1 brightness-100 hover:brightness-[102.5%]">
-					<a class="flex items-center justify-between gap-4 text-sm">
+					<a href="https://supabase.com/blog/launch-week-5-hackathon-winners#:~:text=using%20Edge%20Functions.-,Most%20Fun/Interesting,-Winner" class="flex items-center justify-between gap-4 text-sm hover:underline">
 						Supabase Hackathon: Most fun/interesting
 
 						<div class="relative">
