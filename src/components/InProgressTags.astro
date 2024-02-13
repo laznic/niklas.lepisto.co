@@ -1,0 +1,60 @@
+---
+import BuildingIcon from './icons/BuildingIcon.astro'
+import LearningIcon from './icons/LearningIcon.astro'
+import ReadingIcon from './icons/ReadingIcon.astro'
+import PlayingIcon from './icons/PlayingIcon.astro'
+
+interface Props {
+	items: {
+    category: string;
+    title: string;
+  }[];
+}
+
+const { items } = Astro.props;
+
+const itemsWithIcons = items.map(({ category, title }) => ({
+  category,
+  title,
+  Icon: iconByCategory(category),
+}));
+
+function iconByCategory (category: string) {
+  switch (category) {
+    case 'building':
+      return BuildingIcon;
+    case 'learning':
+      return LearningIcon;
+    case 'reading':
+      return ReadingIcon;
+    case 'playing':
+      return PlayingIcon;
+    default:
+      return null;
+  }
+}
+---
+
+<section class="relative">
+  <ul class="flex gap-8 z-10 overflow-x-auto pb-8 px-8 scroll-smooth snap-x w-full min-[1920px]:justify-evenly perspective-1000 perspective-origin-center">
+    {itemsWithIcons.map(({ category, title, Icon }) => (
+      <li class="grid border border-separator rounded-md overflow-hidden shadow-md flex-shrink-0 hover:rotate-x-3 transition-all hover:shadow-lg">
+        <span class="relative bg-[#f3f3f3] inline-flex items-center gap-2 text-xs border-b border-b-separator pt-4 pb-3 pl-4 pr-5">
+          <Icon />
+          {category.charAt(0).toUpperCase() + category.slice(1)}
+          
+          <div class="absolute w-full top-0 left-0 right-0">
+            <div class="absolute top-1.5 left-1 w-1 h-1 ring-1 ring-neutral-300 border border-neutral-100 drop-shadow bg-background rounded-full" />
+            <div class="absolute top-1.5 right-1 w-1 h-1 ring-1 ring-neutral-300 border border-neutral-100 drop-shadow bg-background rounded-full" />
+            <div class="h-[1px] bg-neutral-400 absolute top-1.5 left-1 right-1 brightness-125" />
+          </div>
+        </span>
+        <span class="py-4 px-4 bg-[#fffffc]">
+          {title}
+        </span>
+      </li>
+    ))}
+  </ul>
+
+  <div class="h-[1px] w-full bg-neutral-300 absolute z-[-1] top-1.5 left-0 right-0" />
+</section>
