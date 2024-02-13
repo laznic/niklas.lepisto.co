@@ -3,17 +3,9 @@ import BuildingIcon from './icons/BuildingIcon.astro'
 import LearningIcon from './icons/LearningIcon.astro'
 import ReadingIcon from './icons/ReadingIcon.astro'
 import PlayingIcon from './icons/PlayingIcon.astro'
+import { inProgress } from '../constants'
 
-interface Props {
-	items: {
-    category: string;
-    title: string;
-  }[];
-}
-
-const { items } = Astro.props;
-
-const itemsWithIcons = items.map(({ category, title }) => ({
+const itemsWithIcons = inProgress.map(({ category, title }) => ({
   category,
   title,
   Icon: iconByCategory(category),
