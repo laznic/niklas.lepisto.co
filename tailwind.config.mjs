@@ -23,6 +23,19 @@ export default {
         separator: "hsl(var(--color-separator) / <alpha-value>)",
         background: "hsl(var(--color-background) / <alpha-value>)",
       },
+      keyframes: {
+        "jump-in": {
+          "0%": {
+            transform: "scale(0%)",
+          },
+          "70%": {
+            transform: "scale(105%)",
+          },
+          "100%": {
+            transform: "scale(100%)",
+          },
+        },
+      },
     },
   },
   plugins: [
