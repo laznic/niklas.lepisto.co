@@ -1,6 +1,7 @@
 import XIcon from "./components/icons/XIcon.astro";
 import GitHubIcon from "./components/icons/GitHubIcon.astro";
 import LinkedInIcon from "./components/icons/LinkedInIcon.astro";
+import ThreadsIcon from "./components/icons/ThreadsIcon.astro";
 
 export const projects = [
   {
@@ -100,13 +101,18 @@ export const socials = [
     icon: XIcon,
   },
   {
+    name: "Threads",
+    url: "https://threads.net/niklas.lepisto.co",
+    icon: ThreadsIcon,
+  },
+  {
     name: "GitHub",
     url: "https://github.com/laznic",
     icon: GitHubIcon,
   },
   {
     name: "LinkedIn",
-    url: "https://www.linkedin.com/in/niklaslepisto/",
+    url: "https://linkedin.com/in/niklaslepisto/",
     icon: LinkedInIcon,
   },
 ];
