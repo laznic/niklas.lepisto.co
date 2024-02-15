@@ -34,6 +34,7 @@ function iconByCategory (category: string) {
       style={`animation-delay: ${(index + 1) * 60}ms; animation-timing-function:cubic-bezier(.1,.05,.97,.82);`}
       class="animate-fade animate-duration-500 grid border border-separator rounded-md overflow-hidden shadow-md flex-shrink-0 hover:rotate-x-3 transition-all hover:shadow-lg">
         <span class="relative bg-[#f3f3f3] inline-flex items-center gap-2 text-xs border-b border-b-separator pt-4 pb-3 pl-4 pr-5">
+          {/* @ts-expect-error */}
           <Icon />
           {category.charAt(0).toUpperCase() + category.slice(1)}
           
