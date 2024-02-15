@@ -10,7 +10,7 @@ import { projects } from '../constants';
     style={`animation-delay: ${(index + 1) * 150}ms;`}
     class="animate-fade-down p-4 rounded-md bg-gradient-to-b from-[#f3f3f3] to-[#fffffc]  drop-shadow-2xl shadow-md border-b-4 border border-background border-b-stone-300 hover:shadow-xl transition-all hover:-translate-y-1 brightness-100 hover:brightness-[102.5%]">
       {award && (
-        <a href={award.url} class="flex justify-between gap-4 text-sm hover: mb-2">
+        <a href={award.url} class="flex justify-between gap-4 text-sm hover:underline mb-2">
           {award.name}
 
           <div class="relative top-0">
