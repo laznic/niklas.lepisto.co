@@ -3,12 +3,14 @@ import { socials } from '../constants';
 ---
 
 <ul class="flex items-center gap-4">
-  {socials.map((social) => (
-    <li>
+  {socials.map((social, index) => (
+    <li
+    class="animate-jump-in transition-all"
+    style={`animation-delay: ${200 + ((index + 1) * 250)}ms; animation-timing-function:cubic-bezier(.1,.05,.97,.82);`}>
       <a
       title={social.name}
       href={social.url}
-      class="block p-2 rounded bg-gradient-to-b from-neutral-100 to-neutral-50 border border-background ring-1 ring-slate-200 hover:-translate-y-1 hover:shadow-xl brightness-100 hover:brightness-[102.5%] transition-all">
+      class={` block p-2 rounded bg-gradient-to-b from-neutral-100 to-neutral-50 border border-background ring-1 ring-slate-200 hover:-translate-y-1 hover:shadow-xl brightness-100 hover:brightness-[102.5%] transition-all`}>
       <social.icon size={30} classes={'group-hover:scale-90 text-neutral-900'}/>
       <span class="sr-only">{social.name}</span>
       </a>

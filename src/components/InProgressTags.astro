@@ -29,8 +29,10 @@ function iconByCategory (category: string) {
 
 <section class="relative">
   <ul class="flex gap-8 z-10 overflow-x-auto pb-8 px-8 scroll-smooth snap-x w-full min-[1920px]:justify-evenly perspective-1000 perspective-origin-center">
-    {itemsWithIcons.map(({ category, title, Icon }) => (
-      <li class="grid border border-separator rounded-md overflow-hidden shadow-md flex-shrink-0 hover:rotate-x-3 transition-all hover:shadow-lg">
+    {itemsWithIcons.map(({ category, title, Icon }, index) => (
+      <li
+      style={`animation-delay: ${(index + 1) * 60}ms; animation-timing-function:cubic-bezier(.1,.05,.97,.82);`}
+      class="animate-jump-in animate-duration-500 grid border border-separator rounded-md overflow-hidden shadow-md flex-shrink-0 hover:rotate-x-3 transition-all hover:shadow-lg">
         <span class="relative bg-[#f3f3f3] inline-flex items-center gap-2 text-xs border-b border-b-separator pt-4 pb-3 pl-4 pr-5">
           <Icon />
           {category.charAt(0).toUpperCase() + category.slice(1)}

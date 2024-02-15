@@ -11,13 +11,13 @@ import SocialLinks from '../components/SocialLinks.astro';
 <Layout title="Niklas Lepistö - Experimental Web Dev">
 	<main class="grid">
 		<header class="grid grid-cols-1 md:grid-cols-5 gap-12 md:gap-24 p-8 pb-12 py-24 container mx-auto">
-			<div class="md:col-span-2 brightness-105 rounded-lg overflow-hidden shadow drop-shadow-2xl ring-2 ring-neutral-300 border border-background order-last md:order-first">
-				<img class=" w-full object-cover h-full max-h-1/2 md:max-h-auto object-top" src="/images/headshot-2.webp" alt="Niklas Lepistö">
+			<div class="animate-fade-right md:col-span-2 brightness-105 rounded-lg overflow-hidden shadow drop-shadow-2xl ring-2 ring-neutral-300 border border-background order-last md:order-first">
+				<img class="w-full object-cover h-full max-h-1/2 md:max-h-auto object-top" src="/images/headshot-2.webp" alt="Niklas Lepistö">
 			</div>
 
 			<section class="md:col-span-3 items-center grid order-first md:order-last">
 				<div class="grid gap-4">
-					<h1 class="text-4xl leading-none">
+					<h1 class="animate-fade-left text-4xl leading-none">
 						Niklas
 						<span class="inline-block relative group">
 							<span class="w-[17%] h-[12%] bg-black absolute -right-[2%] top-[7.5%] block"></span>
@@ -26,9 +26,9 @@ import SocialLinks from '../components/SocialLinks.astro';
 						</span>
 					</h1>
 
-					<h2 class="prose text-md">
-						I'm a Full Stack Developer with Frontend focus. I love to create experiences and experiment with new technologies, and I'm always looking to learn more about anything.
-						I try to inspire others to learn, expirement, and go after what they truly want to do by sharing as much as I can.
+					<h2 class="animate-fade-left prose text-md">
+						I'm a creative Full Stack Developer. I love to create experiences and experiment with new technologies, and I'm always looking to learn more.
+						I try to inspire others to learn, expirement, and go after what they truly want to do by sharing as much as I can about myself.
 					</h2>
 
 					<SocialLinks />
@@ -37,7 +37,7 @@ import SocialLinks from '../components/SocialLinks.astro';
 		</header>
 
 		<section class="w-full bg-gradient-to-b to-[#f3f3f3] from-background">
-			<div class="container mx-auto p-8 md:pb-16 mb-12 md:mb-24">
+			<div class="container mx-auto p-8 md:pb-16 mb-12 md:mb-24 animate-fade-right animate-delay-300">
 				<h2>Some brands I've worked with:</h2>
 				<span class="text-xs italic">as a direct employee or in a client project via an employer</span>
 
@@ -46,13 +46,15 @@ import SocialLinks from '../components/SocialLinks.astro';
 		</section>
 
 		<section class="overflow-hidden bg-gradient-to-b relative from-[#f3f3f3] to-background py-14 pb-24">
-			<h2 class="text-neutral-200 text-3xl z-10 relative mx-auto container px-8">Some projects</h2>
+			<h2 class="text-neutral-200 text-3xl z-10 relative mx-auto container px-8 animate-fade animate-delay-750">
+				Some projects
+			</h2>
 
 			<ProjectsList />
 		</section>
 		
 		<section class="py-36 overflow-hidden">
-			<h2 class="text-neutral-200 text-3xl mb-8 mx-auto container px-8">
+			<h2 class="text-neutral-200 text-3xl mb-8 mx-auto container px-8 animate-fade animate-delay-750">
 				Few things in progress
 			</h2>
 
