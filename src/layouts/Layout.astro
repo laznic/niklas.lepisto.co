@@ -1,6 +1,8 @@
 ---
 import './base.css';
 import { SEO } from 'astro-seo'
+import { join } from "node:path";
+import { AstroFont } from "astro-font";
 
 interface Props {
 	title: string;
@@ -38,6 +40,41 @@ const { title } = Astro.props;
 				site: '@laznic',
 				creator: '@laznic'
 			}}
+		/>
+		<AstroFont
+		  config={[
+			{
+			  name: "TechnaSans",
+			  src: [
+				{
+				  style: 'normal',
+				  weight: 'normal',
+				  path: join(process.cwd(), 'public', 'fonts', 'TechnaSans-Regular.otf'),
+				  css: {
+					"font-feature-settings": '"ss01"'
+				  }
+				},
+			  ],
+			  preload: false,
+			  display: "swap",
+			  fallback: "sans-serif",
+			  cssVariable: "font-techna",
+			},
+			{
+			  name: "GeistMono",
+			  src: [
+				{
+				  style: 'normal',
+				  weight: 'normal',
+				  path: join(process.cwd(), 'public', 'fonts', 'GeistMonoVariableVF.woff2'),
+				},
+			  ],
+			  preload: false,
+			  display: "swap",
+			  fallback: "sans-serif",
+			  cssVariable: "font-geist-mono",
+			},
+		  ]}
 		/>
 	</head>
 	<body class="bg-background">

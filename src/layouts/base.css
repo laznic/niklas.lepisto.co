@@ -2,32 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: "TechnaSans";
-  src: url("/fonts/TechnaSans-Regular.otf") format("opentype");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-  font-feature-settings: "ss01";
-}
-
-@font-face {
-  font-family: "GeistMono";
-  src: url("/fonts/GeistMonoVariableVF.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
 h1,
 h2,
 h3 {
-  font-family: "TechnaSans", sans-serif;
+  font-family: "var(--font-techna)";
   font-feature-settings: "ss01";
 }
 
 body {
-  font-family: "GeistMono", monospace;
+  font-family: "var(--font-geist-mono)";
 }
 
 @layer base {
