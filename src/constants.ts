@@ -74,12 +74,6 @@ export const projects = [
       { name: "Source code", url: "https://github.com/laznic/coloring-book" },
     ],
   },
-  {
-    title: "Quickplay",
-    description: "An automated tournament platform that runs on Discord.",
-    builtWith: ["Hapi.js", "Supabase"],
-    links: [{ name: "quickplay.co", url: "https://quickplay.co" }],
-  },
 ];
 
 export const inProgress = [
