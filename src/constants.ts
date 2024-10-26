@@ -77,7 +77,6 @@ export const projects = [
 ];
 
 export const inProgress = [
-  { category: "reading", title: "1984" },
   { category: "reading", title: "Musashi" },
   { category: "learning", title: "Elixir" },
   { category: "learning", title: "WebGL" },
