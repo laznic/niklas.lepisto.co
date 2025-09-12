@@ -14,7 +14,6 @@ export const projects = [
       "Stable Audio",
     ],
     links: [
-      { name: "mirrorofloss.com", url: "https://mirrorofloss.com" },
       { name: "Source code", url: "https://github.com/laznic/mirror-of-loss" },
     ],
     award: {
@@ -28,7 +27,6 @@ export const projects = [
     description: "An interactive, narrative browser game.",
     builtWith: ["React", "Supabase", "Stable Diffusion", "Open AI"],
     links: [
-      { name: "doorsofabyss.com", url: "https://doorsofabyss.com" },
       { name: "Source code", url: "https://github.com/laznic/doors-of-abyss" },
     ],
     award: {
@@ -42,7 +40,6 @@ export const projects = [
     description: "A hot dog experience, powered by AI.",
     builtWith: ["React", "Supabase", "Stable Diffusion", "Open AI"],
     links: [
-      { name: "generationhotdog.com", url: "https://generationhotdog.com" },
       {
         name: "Source code",
         url: "https://github.com/laznic/generation-hotdog",
@@ -70,7 +67,6 @@ export const projects = [
     description: 'A digital "coloring book" app powered by an AI.',
     builtWith: ["Elixir/Phoenix", "Supabase", "Stable Diffusion", "Replicate"],
     links: [
-      { name: "maicanvas.com", url: "https://maicanvas.com" },
       { name: "Source code", url: "https://github.com/laznic/coloring-book" },
     ],
   },
@@ -79,12 +75,10 @@ export const projects = [
 export const inProgress = [
   { category: "reading", title: "Musashi" },
   { category: "learning", title: "Elixir" },
-  { category: "learning", title: "WebGL" },
-  { category: "learning", title: "Game Development" },
+  { category: "learning", title: "VFX" },
   { category: "playing", title: "Baldur's Gate 3" },
   { category: "building", title: "This website" },
-  { category: "building", title: "Untitled game project" },
-  { category: "building", title: "Untitled brand project" },
+  { category: "building", title: "Unannounced game project" }
 ];
 
 export const socials = [
@@ -92,11 +86,6 @@ export const socials = [
     name: "Twitter",
     url: "https://twitter.com/laznic",
     icon: XIcon,
-  },
-  {
-    name: "Threads",
-    url: "https://threads.net/niklas.lepisto.co",
-    icon: ThreadsIcon,
   },
   {
     name: "GitHub",
